@@ -1,0 +1,12 @@
+<tables>
+	<table id="application_form" class="ApplicationForm"></table>
+	<table id="approval_form" class="ApprovalForm"></table>
+	<table id="attendance_date_table" class="AttendanceDateTable"></table>
+	<table id="attendance_form" class="AttendanceForm"></table>
+	<table id="attendance_set" class="AttendanceSet"></table>
+	<table id="authority_list" class="AuthorityList"></table>
+	<table id="character_table" class="CharacterTable"></table>
+	<table id="department" class="Department"></table>
+	<table id="employee_basic_information" class="EmployeeBasicInformation"></table>
+	<table id="message_table" class="MessageTable"></table>
+</tables>
