@@ -12,11 +12,9 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 
 
 @SpringBootApplication
-//@EnableConfigurationProperties
 //@EnableSwagger2             //启动swagger注解
 //开启通用注解扫描
 @EnableRedisHttpSession
-//@EnableCaching
 public class Application extends SpringBootServletInitializer{
 	/**
      * 实现SpringBootServletInitializer可以让spring-boot项目在web容器中运行
