@@ -128,44 +128,44 @@ public class DepartmentCriteria extends Department{
 
 /************以下为纯条件的拼接*******************/
 
-	public DepartmentCriteria andDepartmentIdEquals(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `department_id`="+departmentId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`department_id`="+departmentId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public DepartmentCriteria orDepartmentIdEquals(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `department_id`="+departmentId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`department_id`="+departmentId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public DepartmentCriteria andDepartmentIdNotEquals(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `department_id`!="+departmentId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`department_id`!="+departmentId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdNotEquals(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `department_id`!="+departmentId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`department_id`!="+departmentId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class DepartmentCriteria extends Department{
 	 * @param 
 	 * @return
 	 */
-	public DepartmentCriteria andDepartmentIdGreaterThan(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `department_id`>"+departmentId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`department_id`>"+departmentId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdGreaterThan(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `department_id`>"+departmentId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`department_id`>"+departmentId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public DepartmentCriteria andDepartmentIdLessThan(Integer departmentId){
-		if(departmentId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `department_id`<"+departmentId+" ";
-			}else{
-				condition123 += "`department_id`<"+departmentId+" ";
-			}
-		}
-		return this;
-	}
-	public DepartmentCriteria orDepartmentIdLessThan(Integer departmentId){
-		if(departmentId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `department_id`<"+departmentId+" ";
-			}else{
-				condition123 += "`department_id`<"+departmentId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public DepartmentCriteria andDepartmentIdGreadterThanAndEquals(Integer departmentId){
-		if(departmentId!=null){
+	
+	public DepartmentCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `department_id`>="+departmentId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`department_id`>="+departmentId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdGreadterThanAndEquals(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `department_id`>="+departmentId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`department_id`>="+departmentId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public DepartmentCriteria andDepartmentIdLessThanAndEquals(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `department_id`<="+departmentId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`department_id`<="+departmentId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdLessThanAndEquals(Integer departmentId){
-		if(departmentId!=null){
+	public DepartmentCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `department_id`<="+departmentId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`department_id`<="+departmentId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public DepartmentCriteria andDepartmentIdLike(Integer departmentId){
-		if(departmentId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `department_id` like "+departmentId+" ";
-			}else{
-				condition123 += "`department_id` like "+departmentId+" ";
-			}
-		}
-		return this;
-	}
-	public DepartmentCriteria orDepartmentIdLike(Integer departmentId){
-		if(departmentId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `department_id` like "+departmentId+" ";
-			}else{
-				condition123 += "`department_id` like "+departmentId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public DepartmentCriteria andDepartmentIdIsNull(){
+	public DepartmentCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `department_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`department_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public DepartmentCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public DepartmentCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public DepartmentCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public DepartmentCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdIsNull(){
+	public DepartmentCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `department_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`department_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public DepartmentCriteria andDepartmentIdIsNotNull(){
+	public DepartmentCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `department_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`department_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdIsNotNull(){
+	public DepartmentCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `department_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`department_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public DepartmentCriteria andDepartmentIdIn(String value){
+	public DepartmentCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `department_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`department_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdIn(String value){
+	public DepartmentCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `department_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`department_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public DepartmentCriteria andDepartmentIdNotIn(String value){
+	public DepartmentCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `department_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`department_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public DepartmentCriteria orDepartmentIdNotIn(String value){
+	public DepartmentCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `department_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`department_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -2225,7 +2225,7 @@ public class DepartmentCriteria extends Department{
 	}
 
 	private void initDepartment(Department department) {
-		super.setDepartmentId(department.getDepartmentId());
+		super.setId(department.getId());
 		super.setDepartmentNumber(department.getDepartmentNumber());
 		super.setDepartmentName(department.getDepartmentName());
 		super.setDepartmentAddress(department.getDepartmentAddress());

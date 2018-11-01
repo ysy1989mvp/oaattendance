@@ -128,44 +128,44 @@ public class ApprovalFormCriteria extends ApprovalForm{
 
 /************以下为纯条件的拼接*******************/
 
-	public ApprovalFormCriteria andApprovalFormIdEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id`="+approvalFormId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`approval_form_id`="+approvalFormId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApprovalFormCriteria orApprovalFormIdEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `approval_form_id`="+approvalFormId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`approval_form_id`="+approvalFormId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApprovalFormCriteria andApprovalFormIdNotEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id`!="+approvalFormId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`approval_form_id`!="+approvalFormId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdNotEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `approval_form_id`!="+approvalFormId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`approval_form_id`!="+approvalFormId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class ApprovalFormCriteria extends ApprovalForm{
 	 * @param 
 	 * @return
 	 */
-	public ApprovalFormCriteria andApprovalFormIdGreaterThan(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id`>"+approvalFormId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`approval_form_id`>"+approvalFormId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdGreaterThan(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `approval_form_id`>"+approvalFormId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`approval_form_id`>"+approvalFormId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public ApprovalFormCriteria andApprovalFormIdLessThan(Integer approvalFormId){
-		if(approvalFormId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `approval_form_id`<"+approvalFormId+" ";
-			}else{
-				condition123 += "`approval_form_id`<"+approvalFormId+" ";
-			}
-		}
-		return this;
-	}
-	public ApprovalFormCriteria orApprovalFormIdLessThan(Integer approvalFormId){
-		if(approvalFormId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `approval_form_id`<"+approvalFormId+" ";
-			}else{
-				condition123 += "`approval_form_id`<"+approvalFormId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApprovalFormCriteria andApprovalFormIdGreadterThanAndEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	
+	public ApprovalFormCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id`>="+approvalFormId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`approval_form_id`>="+approvalFormId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdGreadterThanAndEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `approval_form_id`>="+approvalFormId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`approval_form_id`>="+approvalFormId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApprovalFormCriteria andApprovalFormIdLessThanAndEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id`<="+approvalFormId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`approval_form_id`<="+approvalFormId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdLessThanAndEquals(Integer approvalFormId){
-		if(approvalFormId!=null){
+	public ApprovalFormCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `approval_form_id`<="+approvalFormId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`approval_form_id`<="+approvalFormId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public ApprovalFormCriteria andApprovalFormIdLike(Integer approvalFormId){
-		if(approvalFormId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `approval_form_id` like "+approvalFormId+" ";
-			}else{
-				condition123 += "`approval_form_id` like "+approvalFormId+" ";
-			}
-		}
-		return this;
-	}
-	public ApprovalFormCriteria orApprovalFormIdLike(Integer approvalFormId){
-		if(approvalFormId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `approval_form_id` like "+approvalFormId+" ";
-			}else{
-				condition123 += "`approval_form_id` like "+approvalFormId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApprovalFormCriteria andApprovalFormIdIsNull(){
+	public ApprovalFormCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`approval_form_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdIsNull(){
+	public ApprovalFormCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `approval_form_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`approval_form_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public ApprovalFormCriteria andApprovalFormIdIsNotNull(){
+	public ApprovalFormCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `approval_form_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`approval_form_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdIsNotNull(){
+	public ApprovalFormCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `approval_form_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`approval_form_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public ApprovalFormCriteria andApprovalFormIdIn(String value){
+	public ApprovalFormCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`approval_form_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdIn(String value){
+	public ApprovalFormCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `approval_form_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`approval_form_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public ApprovalFormCriteria andApprovalFormIdNotIn(String value){
+	public ApprovalFormCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `approval_form_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`approval_form_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public ApprovalFormCriteria orApprovalFormIdNotIn(String value){
+	public ApprovalFormCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `approval_form_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`approval_form_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -575,6 +575,232 @@ public class ApprovalFormCriteria extends ApprovalForm{
 				condition123 += "or `application_id` not in("+value+") ";
 			}else{
 				condition123 += "`application_id` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+
+	public ApprovalFormCriteria andApplicationFormIdEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id`="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria orApplicationFormIdEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id`="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria andApplicationFormIdNotEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id`!="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`!="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdNotEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id`!="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`!="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	/**
+	 * 大于
+	 * @param 
+	 * @return
+	 */
+	public ApprovalFormCriteria andApplicationFormIdGreaterThan(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id`>"+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`>"+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdGreaterThan(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id`>"+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`>"+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	
+	
+	public ApprovalFormCriteria andApplicationFormIdLessThan(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id`<"+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`<"+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdLessThan(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id`<"+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`<"+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria andApplicationFormIdGreadterThanAndEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id`>="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`>="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdGreadterThanAndEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id`>="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`>="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria andApplicationFormIdLessThanAndEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id`<="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`<="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdLessThanAndEquals(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id`<="+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id`<="+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria andApplicationFormIdLike(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id` like "+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id` like "+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdLike(Integer applicationFormId){
+		if(applicationFormId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id` like "+applicationFormId+" ";
+			}else{
+				condition123 += "`application_form_id` like "+applicationFormId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApprovalFormCriteria andApplicationFormIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id` is null";
+			}else{
+				condition123 += "`application_form_id` is null";
+			}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdIsNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_form_id` is null";
+		}else{
+			condition123 += "`application_form_id` is null";
+		}
+		return this;
+	}
+	public ApprovalFormCriteria andApplicationFormIdIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "and `application_form_id` is not null";
+		}else{
+			condition123 += "`application_form_id` is not null";
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_form_id` is not null";
+		}else{
+			condition123 += "`application_form_id` is not null";
+		}
+		return this;
+	}
+	public ApprovalFormCriteria andApplicationFormIdIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id` in("+value+") ";
+			}else{
+				condition123 += "`application_form_id` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id` in("+value+") ";
+			}else{
+				condition123 += "`application_form_id` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria andApplicationFormIdNotIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_form_id` not in("+value+") ";
+			}else{
+				condition123 += "`application_form_id` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+	public ApprovalFormCriteria orApplicationFormIdNotIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_form_id` not in("+value+") ";
+			}else{
+				condition123 += "`application_form_id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -2499,8 +2725,9 @@ public class ApprovalFormCriteria extends ApprovalForm{
 	}
 
 	private void initApprovalForm(ApprovalForm approvalForm) {
-		super.setApprovalFormId(approvalForm.getApprovalFormId());
+		super.setId(approvalForm.getId());
 		super.setApplicationId(approvalForm.getApplicationId());
+		super.setApplicationFormId(approvalForm.getApplicationFormId());
 		super.setApprovalFormApprover(approvalForm.getApprovalFormApprover());
 		super.setApprovalFormOrder(approvalForm.getApprovalFormOrder());
 		super.setApprovalFormThroughOrNot(approvalForm.getApprovalFormThroughOrNot());

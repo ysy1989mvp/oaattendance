@@ -128,44 +128,44 @@ public class AttendanceFormCriteria extends AttendanceForm{
 
 /************以下为纯条件的拼接*******************/
 
-	public AttendanceFormCriteria andAttendanceIdEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id`="+attendanceId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`attendance_id`="+attendanceId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceFormCriteria orAttendanceIdEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_id`="+attendanceId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`attendance_id`="+attendanceId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceFormCriteria andAttendanceIdNotEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id`!="+attendanceId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`attendance_id`!="+attendanceId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdNotEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_id`!="+attendanceId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`attendance_id`!="+attendanceId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class AttendanceFormCriteria extends AttendanceForm{
 	 * @param 
 	 * @return
 	 */
-	public AttendanceFormCriteria andAttendanceIdGreaterThan(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id`>"+attendanceId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`attendance_id`>"+attendanceId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdGreaterThan(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_id`>"+attendanceId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`attendance_id`>"+attendanceId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public AttendanceFormCriteria andAttendanceIdLessThan(Integer attendanceId){
-		if(attendanceId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `attendance_id`<"+attendanceId+" ";
-			}else{
-				condition123 += "`attendance_id`<"+attendanceId+" ";
-			}
-		}
-		return this;
-	}
-	public AttendanceFormCriteria orAttendanceIdLessThan(Integer attendanceId){
-		if(attendanceId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `attendance_id`<"+attendanceId+" ";
-			}else{
-				condition123 += "`attendance_id`<"+attendanceId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceFormCriteria andAttendanceIdGreadterThanAndEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	
+	public AttendanceFormCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id`>="+attendanceId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`attendance_id`>="+attendanceId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdGreadterThanAndEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_id`>="+attendanceId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`attendance_id`>="+attendanceId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceFormCriteria andAttendanceIdLessThanAndEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id`<="+attendanceId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`attendance_id`<="+attendanceId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdLessThanAndEquals(Integer attendanceId){
-		if(attendanceId!=null){
+	public AttendanceFormCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_id`<="+attendanceId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`attendance_id`<="+attendanceId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public AttendanceFormCriteria andAttendanceIdLike(Integer attendanceId){
-		if(attendanceId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `attendance_id` like "+attendanceId+" ";
-			}else{
-				condition123 += "`attendance_id` like "+attendanceId+" ";
-			}
-		}
-		return this;
-	}
-	public AttendanceFormCriteria orAttendanceIdLike(Integer attendanceId){
-		if(attendanceId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `attendance_id` like "+attendanceId+" ";
-			}else{
-				condition123 += "`attendance_id` like "+attendanceId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceFormCriteria andAttendanceIdIsNull(){
+	public AttendanceFormCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`attendance_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public AttendanceFormCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceFormCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public AttendanceFormCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceFormCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdIsNull(){
+	public AttendanceFormCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `attendance_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`attendance_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public AttendanceFormCriteria andAttendanceIdIsNotNull(){
+	public AttendanceFormCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `attendance_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`attendance_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdIsNotNull(){
+	public AttendanceFormCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `attendance_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`attendance_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public AttendanceFormCriteria andAttendanceIdIn(String value){
+	public AttendanceFormCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`attendance_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdIn(String value){
+	public AttendanceFormCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`attendance_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AttendanceFormCriteria andAttendanceIdNotIn(String value){
+	public AttendanceFormCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`attendance_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AttendanceFormCriteria orAttendanceIdNotIn(String value){
+	public AttendanceFormCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`attendance_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -2499,7 +2499,7 @@ public class AttendanceFormCriteria extends AttendanceForm{
 	}
 
 	private void initAttendanceForm(AttendanceForm attendanceForm) {
-		super.setAttendanceId(attendanceForm.getAttendanceId());
+		super.setId(attendanceForm.getId());
 		super.setUserId(attendanceForm.getUserId());
 		super.setAttendanceFormClockTime(attendanceForm.getAttendanceFormClockTime());
 		super.setAttendanceFormClockStatus(attendanceForm.getAttendanceFormClockStatus());

@@ -128,44 +128,44 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 
 /************以下为纯条件的拼接*******************/
 
-	public EmployeeBasicInformationCriteria andEmployeeIdEquals(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id`="+employeeId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`employee_id`="+employeeId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria orEmployeeIdEquals(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `employee_id`="+employeeId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`employee_id`="+employeeId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andEmployeeIdNotEquals(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id`!="+employeeId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`employee_id`!="+employeeId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdNotEquals(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `employee_id`!="+employeeId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`employee_id`!="+employeeId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 	 * @param 
 	 * @return
 	 */
-	public EmployeeBasicInformationCriteria andEmployeeIdGreaterThan(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id`>"+employeeId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`employee_id`>"+employeeId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdGreaterThan(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `employee_id`>"+employeeId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`employee_id`>"+employeeId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public EmployeeBasicInformationCriteria andEmployeeIdLessThan(Integer employeeId){
-		if(employeeId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `employee_id`<"+employeeId+" ";
-			}else{
-				condition123 += "`employee_id`<"+employeeId+" ";
-			}
-		}
-		return this;
-	}
-	public EmployeeBasicInformationCriteria orEmployeeIdLessThan(Integer employeeId){
-		if(employeeId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `employee_id`<"+employeeId+" ";
-			}else{
-				condition123 += "`employee_id`<"+employeeId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andEmployeeIdGreadterThanAndEquals(Integer employeeId){
-		if(employeeId!=null){
+	
+	public EmployeeBasicInformationCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id`>="+employeeId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`employee_id`>="+employeeId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdGreadterThanAndEquals(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `employee_id`>="+employeeId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`employee_id`>="+employeeId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andEmployeeIdLessThanAndEquals(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id`<="+employeeId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`employee_id`<="+employeeId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdLessThanAndEquals(Integer employeeId){
-		if(employeeId!=null){
+	public EmployeeBasicInformationCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `employee_id`<="+employeeId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`employee_id`<="+employeeId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public EmployeeBasicInformationCriteria andEmployeeIdLike(Integer employeeId){
-		if(employeeId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `employee_id` like "+employeeId+" ";
-			}else{
-				condition123 += "`employee_id` like "+employeeId+" ";
-			}
-		}
-		return this;
-	}
-	public EmployeeBasicInformationCriteria orEmployeeIdLike(Integer employeeId){
-		if(employeeId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `employee_id` like "+employeeId+" ";
-			}else{
-				condition123 += "`employee_id` like "+employeeId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andEmployeeIdIsNull(){
+	public EmployeeBasicInformationCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`employee_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdIsNull(){
+	public EmployeeBasicInformationCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `employee_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`employee_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria andEmployeeIdIsNotNull(){
+	public EmployeeBasicInformationCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `employee_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`employee_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdIsNotNull(){
+	public EmployeeBasicInformationCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `employee_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`employee_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria andEmployeeIdIn(String value){
+	public EmployeeBasicInformationCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`employee_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdIn(String value){
+	public EmployeeBasicInformationCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `employee_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`employee_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria andEmployeeIdNotIn(String value){
+	public EmployeeBasicInformationCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `employee_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`employee_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orEmployeeIdNotIn(String value){
+	public EmployeeBasicInformationCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `employee_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`employee_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -5465,7 +5465,7 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 	}
 
 	private void initEmployeeBasicInformation(EmployeeBasicInformation employeeBasicInformation) {
-		super.setEmployeeId(employeeBasicInformation.getEmployeeId());
+		super.setId(employeeBasicInformation.getId());
 		super.setWorkId(employeeBasicInformation.getWorkId());
 		super.setPassword(employeeBasicInformation.getPassword());
 		super.setName(employeeBasicInformation.getName());

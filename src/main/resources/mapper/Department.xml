@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.IDepartmentDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.DepartmentAO" >
-		<result column="department_id" property="departmentId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="department_number" property="departmentNumber" jdbcType="BIGINT" />
 		<result column="department_name" property="departmentName" jdbcType="VARCHAR" />
 		<result column="department_address" property="departmentAddress" jdbcType="VARCHAR" />
@@ -13,7 +13,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`department_id`,`department_number`,`department_name`,`department_address`,`department_leader`,`department_intro`,`status`,`create_time`
+		`id`,`department_number`,`department_name`,`department_address`,`department_leader`,`department_intro`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -42,8 +42,8 @@
 	<insert id="addDepartment" parameterType="com.qkz5.oaattendance.entity.pojo.Department"  keyProperty="id" useGeneratedKeys="true">
 		insert into `department` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="departmentId != null" >
-				`department_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="departmentNumber != null" >
 				`department_number`, 
@@ -68,8 +68,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="departmentId != null" >
-				#{departmentId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="departmentNumber != null" >
 				#{departmentNumber,jdbcType=INT},
@@ -98,8 +98,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.Department" >
 		update `department`
 		<set >
-			<if test="departmentId != null" >
-				`department_id` = #{departmentId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="departmentNumber != null" >
 				`department_number` = #{departmentNumber,jdbcType=INT},
@@ -129,8 +129,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.DepartmentCriteria" >
 		update `department`
 		<set >
-			<if test="departmentId != null" >
-				`department_id` = #{departmentId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="departmentNumber != null" >
 				`department_number` = #{departmentNumber,jdbcType=INT},

@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe ApplicationForm实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,7 +17,11 @@ public class ApplicationForm implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//申请id
-	private Integer applicationId;
+	private Integer id;
+	//申请人id
+	private Integer applicationUserId;
+	//申请人
+	private String applicationUser;
 	//申请类型
 	private String applicationType;
 	//申请分类
@@ -32,6 +36,8 @@ public class ApplicationForm implements Serializable{
 	private String applicationReason;
 	//抄送人
 	private String applicationCopyRecipients;
+	//申请时间
+	private String applicationCreatetime;
 	//涉及金额
 	private String applicationMoneyInvolved;
 	//状态
@@ -42,12 +48,28 @@ public class ApplicationForm implements Serializable{
 
 
 	}
-	public Integer getApplicationId() {
-		return applicationId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setApplicationId(Integer applicationId) {
-		this.applicationId = applicationId;
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getApplicationUserId() {
+		return applicationUserId;
+	}
+
+	public void setApplicationUserId(Integer applicationUserId) {
+		this.applicationUserId = applicationUserId;
+	}
+
+	public String getApplicationUser() {
+		return applicationUser;
+	}
+
+	public void setApplicationUser(String applicationUser) {
+		this.applicationUser = applicationUser;
 	}
 
 	public String getApplicationType() {
@@ -106,6 +128,14 @@ public class ApplicationForm implements Serializable{
 		this.applicationCopyRecipients = applicationCopyRecipients;
 	}
 
+	public String getApplicationCreatetime() {
+		return applicationCreatetime;
+	}
+
+	public void setApplicationCreatetime(String applicationCreatetime) {
+		this.applicationCreatetime = applicationCreatetime;
+	}
+
 	public String getApplicationMoneyInvolved() {
 		return applicationMoneyInvolved;
 	}
@@ -131,6 +161,6 @@ public class ApplicationForm implements Serializable{
 	}
 
 public String toString() {
-		return "ApplicationForm [applicationId=" + applicationId + ", applicationType=" + applicationType + ", applicationClassify=" + applicationClassify + ", applicationStartTime=" + applicationStartTime + ", applicationLastTime=" + applicationLastTime + ", applicationDuration=" + applicationDuration + ", applicationReason=" + applicationReason + ", applicationCopyRecipients=" + applicationCopyRecipients + ", applicationMoneyInvolved=" + applicationMoneyInvolved + ", status=" + status + ", createTime=" + createTime+"]";
+		return "ApplicationForm [id=" + id + ", applicationUserId=" + applicationUserId + ", applicationUser=" + applicationUser + ", applicationType=" + applicationType + ", applicationClassify=" + applicationClassify + ", applicationStartTime=" + applicationStartTime + ", applicationLastTime=" + applicationLastTime + ", applicationDuration=" + applicationDuration + ", applicationReason=" + applicationReason + ", applicationCopyRecipients=" + applicationCopyRecipients + ", applicationCreatetime=" + applicationCreatetime + ", applicationMoneyInvolved=" + applicationMoneyInvolved + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

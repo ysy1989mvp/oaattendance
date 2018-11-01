@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe MessageTable实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,7 +17,7 @@ public class MessageTable implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//消息表id
-	private Integer messageId;
+	private Integer id;
 	//发送人
 	private String messageTableSender;
 	//接收人(多个接收人用特殊符号隔开)
@@ -27,9 +27,9 @@ public class MessageTable implements Serializable{
 	//是否查看状态(0.未查看，1.已查看。2.未知)
 	private String messageTableStatus;
 	//短信是否发送成功
-	private Integer messageTableSendYesOrNo;
+	private String messageTableSendYesOrNo;
 	//app推送成功
-	private Integer messageTableAppSendYesOrNo;
+	private String messageTableAppSendYesOrNo;
 	//状态
 	private String status;
 	//时间
@@ -38,12 +38,12 @@ public class MessageTable implements Serializable{
 
 
 	}
-	public Integer getMessageId() {
-		return messageId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setMessageId(Integer messageId) {
-		this.messageId = messageId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getMessageTableSender() {
@@ -78,19 +78,19 @@ public class MessageTable implements Serializable{
 		this.messageTableStatus = messageTableStatus;
 	}
 
-	public Integer getMessageTableSendYesOrNo() {
+	public String getMessageTableSendYesOrNo() {
 		return messageTableSendYesOrNo;
 	}
 
-	public void setMessageTableSendYesOrNo(Integer messageTableSendYesOrNo) {
+	public void setMessageTableSendYesOrNo(String messageTableSendYesOrNo) {
 		this.messageTableSendYesOrNo = messageTableSendYesOrNo;
 	}
 
-	public Integer getMessageTableAppSendYesOrNo() {
+	public String getMessageTableAppSendYesOrNo() {
 		return messageTableAppSendYesOrNo;
 	}
 
-	public void setMessageTableAppSendYesOrNo(Integer messageTableAppSendYesOrNo) {
+	public void setMessageTableAppSendYesOrNo(String messageTableAppSendYesOrNo) {
 		this.messageTableAppSendYesOrNo = messageTableAppSendYesOrNo;
 	}
 
@@ -111,6 +111,6 @@ public class MessageTable implements Serializable{
 	}
 
 public String toString() {
-		return "MessageTable [messageId=" + messageId + ", messageTableSender=" + messageTableSender + ", messageTableRecipient=" + messageTableRecipient + ", messageTableContent=" + messageTableContent + ", messageTableStatus=" + messageTableStatus + ", messageTableSendYesOrNo=" + messageTableSendYesOrNo + ", messageTableAppSendYesOrNo=" + messageTableAppSendYesOrNo + ", status=" + status + ", createTime=" + createTime+"]";
+		return "MessageTable [id=" + id + ", messageTableSender=" + messageTableSender + ", messageTableRecipient=" + messageTableRecipient + ", messageTableContent=" + messageTableContent + ", messageTableStatus=" + messageTableStatus + ", messageTableSendYesOrNo=" + messageTableSendYesOrNo + ", messageTableAppSendYesOrNo=" + messageTableAppSendYesOrNo + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

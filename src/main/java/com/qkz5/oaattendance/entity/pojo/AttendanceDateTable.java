@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe AttendanceDateTable实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,7 +17,7 @@ public class AttendanceDateTable implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//考勤日期表id
-	private Integer attendanceDateId;
+	private Integer id;
 	//考勤日期类型 （0.所有人员，1.部门，2.员工）
 	private String dateTableType;
 	//部门编号、员工编号
@@ -28,6 +28,8 @@ public class AttendanceDateTable implements Serializable{
 	private String dateTableMonth;
 	//日
 	private String dateTableDay;
+	//工作状态
+	private String dateTableWorkingStatus;
 	//状态
 	private String status;
 	//创建时间
@@ -36,12 +38,12 @@ public class AttendanceDateTable implements Serializable{
 
 
 	}
-	public Integer getAttendanceDateId() {
-		return attendanceDateId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setAttendanceDateId(Integer attendanceDateId) {
-		this.attendanceDateId = attendanceDateId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getDateTableType() {
@@ -84,6 +86,14 @@ public class AttendanceDateTable implements Serializable{
 		this.dateTableDay = dateTableDay;
 	}
 
+	public String getDateTableWorkingStatus() {
+		return dateTableWorkingStatus;
+	}
+
+	public void setDateTableWorkingStatus(String dateTableWorkingStatus) {
+		this.dateTableWorkingStatus = dateTableWorkingStatus;
+	}
+
 	public String getStatus() {
 		return status;
 	}
@@ -101,6 +111,6 @@ public class AttendanceDateTable implements Serializable{
 	}
 
 public String toString() {
-		return "AttendanceDateTable [attendanceDateId=" + attendanceDateId + ", dateTableType=" + dateTableType + ", userId=" + userId + ", dateTableYear=" + dateTableYear + ", dateTableMonth=" + dateTableMonth + ", dateTableDay=" + dateTableDay + ", status=" + status + ", createTime=" + createTime+"]";
+		return "AttendanceDateTable [id=" + id + ", dateTableType=" + dateTableType + ", userId=" + userId + ", dateTableYear=" + dateTableYear + ", dateTableMonth=" + dateTableMonth + ", dateTableDay=" + dateTableDay + ", dateTableWorkingStatus=" + dateTableWorkingStatus + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

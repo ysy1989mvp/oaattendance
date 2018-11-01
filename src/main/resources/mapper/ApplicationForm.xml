@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.IApplicationFormDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.ApplicationFormAO" >
-		<result column="application_id" property="applicationId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="application_user_id" property="applicationUserId" jdbcType="BIGINT" />
 		<result column="application_user" property="applicationUser" jdbcType="VARCHAR" />
 		<result column="application_type" property="applicationType" jdbcType="VARCHAR" />
@@ -19,7 +19,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`application_id`,`application_user_id`,`application_user`,`application_type`,`application_classify`,`application_start_time`,`application_last_time`,`application_duration`,`application_reason`,`application_copy_recipients`,`application_createtime`,`application_money_involved`,`status`,`create_time`
+		`id`,`application_user_id`,`application_user`,`application_type`,`application_classify`,`application_start_time`,`application_last_time`,`application_duration`,`application_reason`,`application_copy_recipients`,`application_createtime`,`application_money_involved`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -48,8 +48,8 @@
 	<insert id="addApplicationForm" parameterType="com.qkz5.oaattendance.entity.pojo.ApplicationForm"  keyProperty="id" useGeneratedKeys="true">
 		insert into `application_form` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="applicationId != null" >
-				`application_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="applicationUserId != null" >
 				`application_user_id`, 
@@ -92,8 +92,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="applicationId != null" >
-				#{applicationId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="applicationUserId != null" >
 				#{applicationUserId,jdbcType=INT},
@@ -140,8 +140,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.ApplicationForm" >
 		update `application_form`
 		<set >
-			<if test="applicationId != null" >
-				`application_id` = #{applicationId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="applicationUserId != null" >
 				`application_user_id` = #{applicationUserId,jdbcType=INT},
@@ -189,8 +189,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.ApplicationFormCriteria" >
 		update `application_form`
 		<set >
-			<if test="applicationId != null" >
-				`application_id` = #{applicationId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="applicationUserId != null" >
 				`application_user_id` = #{applicationUserId,jdbcType=INT},

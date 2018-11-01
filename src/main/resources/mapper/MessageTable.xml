@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.IMessageTableDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.MessageTableAO" >
-		<result column="message_id" property="messageId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="message_table_sender" property="messageTableSender" jdbcType="VARCHAR" />
 		<result column="message_table_recipient" property="messageTableRecipient" jdbcType="VARCHAR" />
 		<result column="message_table_content" property="messageTableContent" jdbcType="VARCHAR" />
@@ -14,7 +14,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`message_id`,`message_table_sender`,`message_table_recipient`,`message_table_content`,`message_table_status`,`message_table_send_yes_or_no`,`message_table_app_send_yes_or_no`,`status`,`create_time`
+		`id`,`message_table_sender`,`message_table_recipient`,`message_table_content`,`message_table_status`,`message_table_send_yes_or_no`,`message_table_app_send_yes_or_no`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -43,8 +43,8 @@
 	<insert id="addMessageTable" parameterType="com.qkz5.oaattendance.entity.pojo.MessageTable"  keyProperty="id" useGeneratedKeys="true">
 		insert into `message_table` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="messageId != null" >
-				`message_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="messageTableSender != null" >
 				`message_table_sender`, 
@@ -72,8 +72,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="messageId != null" >
-				#{messageId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="messageTableSender != null" >
 				#{messageTableSender,jdbcType=VARCHAR},
@@ -105,8 +105,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.MessageTable" >
 		update `message_table`
 		<set >
-			<if test="messageId != null" >
-				`message_id` = #{messageId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="messageTableSender != null" >
 				`message_table_sender` = #{messageTableSender,jdbcType=VARCHAR},
@@ -139,8 +139,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.MessageTableCriteria" >
 		update `message_table`
 		<set >
-			<if test="messageId != null" >
-				`message_id` = #{messageId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="messageTableSender != null" >
 				`message_table_sender` = #{messageTableSender,jdbcType=VARCHAR},

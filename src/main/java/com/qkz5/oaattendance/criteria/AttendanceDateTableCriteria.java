@@ -128,44 +128,44 @@ public class AttendanceDateTableCriteria extends AttendanceDateTable{
 
 /************以下为纯条件的拼接*******************/
 
-	public AttendanceDateTableCriteria andAttendanceDateIdEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id`="+attendanceDateId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`="+attendanceDateId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceDateTableCriteria orAttendanceDateIdEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id`="+attendanceDateId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`="+attendanceDateId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceDateTableCriteria andAttendanceDateIdNotEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id`!="+attendanceDateId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`!="+attendanceDateId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdNotEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id`!="+attendanceDateId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`!="+attendanceDateId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class AttendanceDateTableCriteria extends AttendanceDateTable{
 	 * @param 
 	 * @return
 	 */
-	public AttendanceDateTableCriteria andAttendanceDateIdGreaterThan(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id`>"+attendanceDateId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`>"+attendanceDateId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdGreaterThan(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id`>"+attendanceDateId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`>"+attendanceDateId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public AttendanceDateTableCriteria andAttendanceDateIdLessThan(Integer attendanceDateId){
-		if(attendanceDateId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id`<"+attendanceDateId+" ";
-			}else{
-				condition123 += "`attendance_date_id`<"+attendanceDateId+" ";
-			}
-		}
-		return this;
-	}
-	public AttendanceDateTableCriteria orAttendanceDateIdLessThan(Integer attendanceDateId){
-		if(attendanceDateId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id`<"+attendanceDateId+" ";
-			}else{
-				condition123 += "`attendance_date_id`<"+attendanceDateId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceDateTableCriteria andAttendanceDateIdGreadterThanAndEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	
+	public AttendanceDateTableCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id`>="+attendanceDateId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`>="+attendanceDateId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdGreadterThanAndEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id`>="+attendanceDateId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`>="+attendanceDateId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceDateTableCriteria andAttendanceDateIdLessThanAndEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id`<="+attendanceDateId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`<="+attendanceDateId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdLessThanAndEquals(Integer attendanceDateId){
-		if(attendanceDateId!=null){
+	public AttendanceDateTableCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id`<="+attendanceDateId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`attendance_date_id`<="+attendanceDateId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public AttendanceDateTableCriteria andAttendanceDateIdLike(Integer attendanceDateId){
-		if(attendanceDateId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id` like "+attendanceDateId+" ";
-			}else{
-				condition123 += "`attendance_date_id` like "+attendanceDateId+" ";
-			}
-		}
-		return this;
-	}
-	public AttendanceDateTableCriteria orAttendanceDateIdLike(Integer attendanceDateId){
-		if(attendanceDateId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id` like "+attendanceDateId+" ";
-			}else{
-				condition123 += "`attendance_date_id` like "+attendanceDateId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AttendanceDateTableCriteria andAttendanceDateIdIsNull(){
+	public AttendanceDateTableCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`attendance_date_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdIsNull(){
+	public AttendanceDateTableCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `attendance_date_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`attendance_date_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria andAttendanceDateIdIsNotNull(){
+	public AttendanceDateTableCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `attendance_date_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`attendance_date_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdIsNotNull(){
+	public AttendanceDateTableCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `attendance_date_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`attendance_date_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria andAttendanceDateIdIn(String value){
+	public AttendanceDateTableCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`attendance_date_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdIn(String value){
+	public AttendanceDateTableCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`attendance_date_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria andAttendanceDateIdNotIn(String value){
+	public AttendanceDateTableCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `attendance_date_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`attendance_date_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AttendanceDateTableCriteria orAttendanceDateIdNotIn(String value){
+	public AttendanceDateTableCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `attendance_date_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`attendance_date_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -1676,6 +1676,280 @@ public class AttendanceDateTableCriteria extends AttendanceDateTable{
 		return this;
 	}
 
+	public AttendanceDateTableCriteria andDateTableWorkingStatusEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status`='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria orDateTableWorkingStatusEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status`='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusNotEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status`!='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`!='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusNotEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status`!='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`!='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	/**
+	 * 大于
+	 * @param 
+	 * @return
+	 */
+	public AttendanceDateTableCriteria andDateTableWorkingStatusGreaterThan(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status`>'"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`>'"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusGreaterThan(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status`>'"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`>'"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusLessThan(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status`<'"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`<'"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusLessThan(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status`<'"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`<'"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusGreadterThanAndEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status`>='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`>='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusGreadterThanAndEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status`>='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`>='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusLessThanAndEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status`<='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`<='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusLessThanAndEquals(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status`<='"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status`<='"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusLike(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0&&!("%".equals(dateTableWorkingStatus.trim()))&&!("%%".equals(dateTableWorkingStatus.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status` like '"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status` like '"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusLike(String dateTableWorkingStatus){
+		if(dateTableWorkingStatus!=null&&dateTableWorkingStatus.trim().length()>0&&!("%".equals(dateTableWorkingStatus.trim()))&&!("%%".equals(dateTableWorkingStatus.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status` like '"+dateTableWorkingStatus+"' ";
+			}else{
+				condition123 += "`date_table_working_status` like '"+dateTableWorkingStatus+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status` is null";
+			}else{
+				condition123 += "`date_table_working_status` is null";
+			}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusIsNull(){
+		if(condition123.length()>0){
+			condition123 += "or `date_table_working_status` is null";
+		}else{
+			condition123 += "`date_table_working_status` is null";
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria andDateTableWorkingStatusIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "and `date_table_working_status` is not null";
+		}else{
+			condition123 += "`date_table_working_status` is not null";
+		}
+		return this;
+	}
+	public AttendanceDateTableCriteria orDateTableWorkingStatusIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "or `date_table_working_status` is not null";
+		}else{
+			condition123 += "`date_table_working_status` is not null";
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status` in("+value+") ";
+			}else{
+				condition123 += "`date_table_working_status` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria orDateTableWorkingStatusIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status` in("+value+") ";
+			}else{
+				condition123 += "`date_table_working_status` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria andDateTableWorkingStatusNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `date_table_working_status` not in("+value+") ";
+			}else{
+				condition123 += "`date_table_working_status` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public AttendanceDateTableCriteria orDateTableWorkingStatusNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `date_table_working_status` not in("+value+") ";
+			}else{
+				condition123 += "`date_table_working_status` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+
 	public AttendanceDateTableCriteria andStatusEquals(String status){
 		if(status!=null&&status.trim().length()>0){
 			if(condition123.length()>0){
@@ -2225,12 +2499,13 @@ public class AttendanceDateTableCriteria extends AttendanceDateTable{
 	}
 
 	private void initAttendanceDateTable(AttendanceDateTable attendanceDateTable) {
-		super.setAttendanceDateId(attendanceDateTable.getAttendanceDateId());
+		super.setId(attendanceDateTable.getId());
 		super.setDateTableType(attendanceDateTable.getDateTableType());
 		super.setUserId(attendanceDateTable.getUserId());
 		super.setDateTableYear(attendanceDateTable.getDateTableYear());
 		super.setDateTableMonth(attendanceDateTable.getDateTableMonth());
 		super.setDateTableDay(attendanceDateTable.getDateTableDay());
+		super.setDateTableWorkingStatus(attendanceDateTable.getDateTableWorkingStatus());
 		super.setStatus(attendanceDateTable.getStatus());
 		super.setCreateTime(attendanceDateTable.getCreateTime());
 

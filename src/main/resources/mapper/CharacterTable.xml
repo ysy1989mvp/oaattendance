@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.ICharacterTableDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.CharacterTableAO" >
-		<result column="character_table_id" property="characterTableId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="character_name" property="characterName" jdbcType="VARCHAR" />
 		<result column="authority_modules" property="authorityModules" jdbcType="VARCHAR" />
 		<result column="specific_authority" property="specificAuthority" jdbcType="VARCHAR" />
@@ -11,7 +11,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`character_table_id`,`character_name`,`authority_modules`,`specific_authority`,`status`,`create_time`
+		`id`,`character_name`,`authority_modules`,`specific_authority`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -40,8 +40,8 @@
 	<insert id="addCharacterTable" parameterType="com.qkz5.oaattendance.entity.pojo.CharacterTable"  keyProperty="id" useGeneratedKeys="true">
 		insert into `character_table` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="characterTableId != null" >
-				`character_table_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="characterName != null" >
 				`character_name`, 
@@ -60,8 +60,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="characterTableId != null" >
-				#{characterTableId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="characterName != null" >
 				#{characterName,jdbcType=VARCHAR},
@@ -84,8 +84,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.CharacterTable" >
 		update `character_table`
 		<set >
-			<if test="characterTableId != null" >
-				`character_table_id` = #{characterTableId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="characterName != null" >
 				`character_name` = #{characterName,jdbcType=VARCHAR},
@@ -109,8 +109,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.CharacterTableCriteria" >
 		update `character_table`
 		<set >
-			<if test="characterTableId != null" >
-				`character_table_id` = #{characterTableId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="characterName != null" >
 				`character_name` = #{characterName,jdbcType=VARCHAR},

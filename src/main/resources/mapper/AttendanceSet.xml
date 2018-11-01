@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.IAttendanceSetDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.AttendanceSetAO" >
-		<result column="attendance_set_id" property="attendanceSetId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="attendance_type" property="attendanceType" jdbcType="VARCHAR" />
 		<result column="attendance_classes" property="attendanceClasses" jdbcType="VARCHAR" />
 		<result column="attendance_object" property="attendanceObject" jdbcType="VARCHAR" />
@@ -19,7 +19,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`attendance_set_id`,`attendance_type`,`attendance_classes`,`attendance_object`,`attendance_business_hours`,`attendance_closing_time`,`attendance_flex_time`,`attendance_lateness_allowed`,`attendance_advance_time_allowed`,`attendance_address`,`attendance_address_range`,`attendance_default_time`,`status`,`create_time`
+		`id`,`attendance_type`,`attendance_classes`,`attendance_object`,`attendance_business_hours`,`attendance_closing_time`,`attendance_flex_time`,`attendance_lateness_allowed`,`attendance_advance_time_allowed`,`attendance_address`,`attendance_address_range`,`attendance_default_time`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -48,8 +48,8 @@
 	<insert id="addAttendanceSet" parameterType="com.qkz5.oaattendance.entity.pojo.AttendanceSet"  keyProperty="id" useGeneratedKeys="true">
 		insert into `attendance_set` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="attendanceSetId != null" >
-				`attendance_set_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="attendanceType != null" >
 				`attendance_type`, 
@@ -92,8 +92,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="attendanceSetId != null" >
-				#{attendanceSetId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="attendanceType != null" >
 				#{attendanceType,jdbcType=VARCHAR},
@@ -140,8 +140,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.AttendanceSet" >
 		update `attendance_set`
 		<set >
-			<if test="attendanceSetId != null" >
-				`attendance_set_id` = #{attendanceSetId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="attendanceType != null" >
 				`attendance_type` = #{attendanceType,jdbcType=VARCHAR},
@@ -189,8 +189,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.AttendanceSetCriteria" >
 		update `attendance_set`
 		<set >
-			<if test="attendanceSetId != null" >
-				`attendance_set_id` = #{attendanceSetId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="attendanceType != null" >
 				`attendance_type` = #{attendanceType,jdbcType=VARCHAR},

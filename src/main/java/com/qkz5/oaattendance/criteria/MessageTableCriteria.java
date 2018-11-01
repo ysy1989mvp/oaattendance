@@ -128,44 +128,44 @@ public class MessageTableCriteria extends MessageTable{
 
 /************以下为纯条件的拼接*******************/
 
-	public MessageTableCriteria andMessageIdEquals(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `message_id`="+messageId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`message_id`="+messageId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria orMessageIdEquals(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `message_id`="+messageId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`message_id`="+messageId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageIdNotEquals(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `message_id`!="+messageId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`message_id`!="+messageId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdNotEquals(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `message_id`!="+messageId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`message_id`!="+messageId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class MessageTableCriteria extends MessageTable{
 	 * @param 
 	 * @return
 	 */
-	public MessageTableCriteria andMessageIdGreaterThan(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `message_id`>"+messageId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`message_id`>"+messageId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdGreaterThan(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `message_id`>"+messageId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`message_id`>"+messageId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public MessageTableCriteria andMessageIdLessThan(Integer messageId){
-		if(messageId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `message_id`<"+messageId+" ";
-			}else{
-				condition123 += "`message_id`<"+messageId+" ";
-			}
-		}
-		return this;
-	}
-	public MessageTableCriteria orMessageIdLessThan(Integer messageId){
-		if(messageId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `message_id`<"+messageId+" ";
-			}else{
-				condition123 += "`message_id`<"+messageId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageIdGreadterThanAndEquals(Integer messageId){
-		if(messageId!=null){
+	
+	public MessageTableCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `message_id`>="+messageId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`message_id`>="+messageId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdGreadterThanAndEquals(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `message_id`>="+messageId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`message_id`>="+messageId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageIdLessThanAndEquals(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `message_id`<="+messageId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`message_id`<="+messageId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdLessThanAndEquals(Integer messageId){
-		if(messageId!=null){
+	public MessageTableCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `message_id`<="+messageId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`message_id`<="+messageId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public MessageTableCriteria andMessageIdLike(Integer messageId){
-		if(messageId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `message_id` like "+messageId+" ";
-			}else{
-				condition123 += "`message_id` like "+messageId+" ";
-			}
-		}
-		return this;
-	}
-	public MessageTableCriteria orMessageIdLike(Integer messageId){
-		if(messageId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `message_id` like "+messageId+" ";
-			}else{
-				condition123 += "`message_id` like "+messageId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageIdIsNull(){
+	public MessageTableCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `message_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`message_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public MessageTableCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public MessageTableCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public MessageTableCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public MessageTableCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdIsNull(){
+	public MessageTableCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `message_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`message_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public MessageTableCriteria andMessageIdIsNotNull(){
+	public MessageTableCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `message_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`message_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdIsNotNull(){
+	public MessageTableCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `message_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`message_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public MessageTableCriteria andMessageIdIn(String value){
+	public MessageTableCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`message_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdIn(String value){
+	public MessageTableCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`message_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria andMessageIdNotIn(String value){
+	public MessageTableCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`message_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageIdNotIn(String value){
+	public MessageTableCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`message_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -1450,44 +1450,44 @@ public class MessageTableCriteria extends MessageTable{
 		return this;
 	}
 
-	public MessageTableCriteria andMessageTableSendYesOrNoEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableSendYesOrNoEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_send_yes_or_no`="+messageTableSendYesOrNo+" ";
+				condition123 += "and `message_table_send_yes_or_no`='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`='"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria orMessageTableSendYesOrNoEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableSendYesOrNoEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_send_yes_or_no`="+messageTableSendYesOrNo+" ";
+				condition123 += "or `message_table_send_yes_or_no`='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`='"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableSendYesOrNoNotEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableSendYesOrNoNotEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_send_yes_or_no`!="+messageTableSendYesOrNo+" ";
+				condition123 += "and `message_table_send_yes_or_no`!='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`!="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`!='"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableSendYesOrNoNotEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableSendYesOrNoNotEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_send_yes_or_no`!="+messageTableSendYesOrNo+" ";
+				condition123 += "or `message_table_send_yes_or_no`!='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`!="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`!='"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
@@ -1497,107 +1497,107 @@ public class MessageTableCriteria extends MessageTable{
 	 * @param 
 	 * @return
 	 */
-	public MessageTableCriteria andMessageTableSendYesOrNoGreaterThan(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableSendYesOrNoGreaterThan(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_send_yes_or_no`>"+messageTableSendYesOrNo+" ";
+				condition123 += "and `message_table_send_yes_or_no`>'"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`>"+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`>'"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableSendYesOrNoGreaterThan(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableSendYesOrNoGreaterThan(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_send_yes_or_no`>"+messageTableSendYesOrNo+" ";
+				condition123 += "or `message_table_send_yes_or_no`>'"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`>"+messageTableSendYesOrNo+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public MessageTableCriteria andMessageTableSendYesOrNoLessThan(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
-			if(condition123.length()>0){
-				condition123 += "and `message_table_send_yes_or_no`<"+messageTableSendYesOrNo+" ";
-			}else{
-				condition123 += "`message_table_send_yes_or_no`<"+messageTableSendYesOrNo+" ";
-			}
-		}
-		return this;
-	}
-	public MessageTableCriteria orMessageTableSendYesOrNoLessThan(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
-			if(condition123.length()>0){
-				condition123 += "or `message_table_send_yes_or_no`<"+messageTableSendYesOrNo+" ";
-			}else{
-				condition123 += "`message_table_send_yes_or_no`<"+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`>'"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableSendYesOrNoGreadterThanAndEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	
+	public MessageTableCriteria andMessageTableSendYesOrNoLessThan(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_send_yes_or_no`>="+messageTableSendYesOrNo+" ";
+				condition123 += "and `message_table_send_yes_or_no`<'"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`>="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`<'"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableSendYesOrNoGreadterThanAndEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableSendYesOrNoLessThan(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_send_yes_or_no`>="+messageTableSendYesOrNo+" ";
+				condition123 += "or `message_table_send_yes_or_no`<'"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`>="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`<'"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableSendYesOrNoLessThanAndEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableSendYesOrNoGreadterThanAndEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_send_yes_or_no`<="+messageTableSendYesOrNo+" ";
+				condition123 += "and `message_table_send_yes_or_no`>='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`<="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`>='"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableSendYesOrNoLessThanAndEquals(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableSendYesOrNoGreadterThanAndEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_send_yes_or_no`<="+messageTableSendYesOrNo+" ";
+				condition123 += "or `message_table_send_yes_or_no`>='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no`<="+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`>='"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableSendYesOrNoLike(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableSendYesOrNoLessThanAndEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_send_yes_or_no` like "+messageTableSendYesOrNo+" ";
+				condition123 += "and `message_table_send_yes_or_no`<='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no` like "+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`<='"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableSendYesOrNoLike(Integer messageTableSendYesOrNo){
-		if(messageTableSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableSendYesOrNoLessThanAndEquals(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_send_yes_or_no` like "+messageTableSendYesOrNo+" ";
+				condition123 += "or `message_table_send_yes_or_no`<='"+messageTableSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_send_yes_or_no` like "+messageTableSendYesOrNo+" ";
+				condition123 += "`message_table_send_yes_or_no`<='"+messageTableSendYesOrNo+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public MessageTableCriteria andMessageTableSendYesOrNoLike(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0&&!("%".equals(messageTableSendYesOrNo.trim()))&&!("%%".equals(messageTableSendYesOrNo.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `message_table_send_yes_or_no` like '"+messageTableSendYesOrNo+"' ";
+			}else{
+				condition123 += "`message_table_send_yes_or_no` like '"+messageTableSendYesOrNo+"' ";
+			}
+		}
+		return this;
+	}
+	public MessageTableCriteria orMessageTableSendYesOrNoLike(String messageTableSendYesOrNo){
+		if(messageTableSendYesOrNo!=null&&messageTableSendYesOrNo.trim().length()>0&&!("%".equals(messageTableSendYesOrNo.trim()))&&!("%%".equals(messageTableSendYesOrNo.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `message_table_send_yes_or_no` like '"+messageTableSendYesOrNo+"' ";
+			}else{
+				condition123 += "`message_table_send_yes_or_no` like '"+messageTableSendYesOrNo+"' ";
 			}
 		}
 		return this;
@@ -1635,8 +1635,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria andMessageTableSendYesOrNoIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "and `message_table_send_yes_or_no` in("+value+") ";
 			}else{
@@ -1645,8 +1657,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria orMessageTableSendYesOrNoIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "or `message_table_send_yes_or_no` in("+value+") ";
 			}else{
@@ -1655,8 +1679,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria andMessageTableSendYesOrNoNotIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "and `message_table_send_yes_or_no` not in("+value+") ";
 			}else{
@@ -1665,8 +1701,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria orMessageTableSendYesOrNoNotIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "or `message_table_send_yes_or_no` not in("+value+") ";
 			}else{
@@ -1676,44 +1724,44 @@ public class MessageTableCriteria extends MessageTable{
 		return this;
 	}
 
-	public MessageTableCriteria andMessageTableAppSendYesOrNoEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableAppSendYesOrNoEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_app_send_yes_or_no`="+messageTableAppSendYesOrNo+" ";
+				condition123 += "and `message_table_app_send_yes_or_no`='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`='"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria orMessageTableAppSendYesOrNoEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableAppSendYesOrNoEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_app_send_yes_or_no`="+messageTableAppSendYesOrNo+" ";
+				condition123 += "or `message_table_app_send_yes_or_no`='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`='"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableAppSendYesOrNoNotEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableAppSendYesOrNoNotEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_app_send_yes_or_no`!="+messageTableAppSendYesOrNo+" ";
+				condition123 += "and `message_table_app_send_yes_or_no`!='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`!="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`!='"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableAppSendYesOrNoNotEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableAppSendYesOrNoNotEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_app_send_yes_or_no`!="+messageTableAppSendYesOrNo+" ";
+				condition123 += "or `message_table_app_send_yes_or_no`!='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`!="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`!='"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
@@ -1723,107 +1771,107 @@ public class MessageTableCriteria extends MessageTable{
 	 * @param 
 	 * @return
 	 */
-	public MessageTableCriteria andMessageTableAppSendYesOrNoGreaterThan(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableAppSendYesOrNoGreaterThan(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_app_send_yes_or_no`>"+messageTableAppSendYesOrNo+" ";
+				condition123 += "and `message_table_app_send_yes_or_no`>'"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`>"+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`>'"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableAppSendYesOrNoGreaterThan(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableAppSendYesOrNoGreaterThan(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_app_send_yes_or_no`>"+messageTableAppSendYesOrNo+" ";
+				condition123 += "or `message_table_app_send_yes_or_no`>'"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`>"+messageTableAppSendYesOrNo+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public MessageTableCriteria andMessageTableAppSendYesOrNoLessThan(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
-			if(condition123.length()>0){
-				condition123 += "and `message_table_app_send_yes_or_no`<"+messageTableAppSendYesOrNo+" ";
-			}else{
-				condition123 += "`message_table_app_send_yes_or_no`<"+messageTableAppSendYesOrNo+" ";
-			}
-		}
-		return this;
-	}
-	public MessageTableCriteria orMessageTableAppSendYesOrNoLessThan(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
-			if(condition123.length()>0){
-				condition123 += "or `message_table_app_send_yes_or_no`<"+messageTableAppSendYesOrNo+" ";
-			}else{
-				condition123 += "`message_table_app_send_yes_or_no`<"+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`>'"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableAppSendYesOrNoGreadterThanAndEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	
+	public MessageTableCriteria andMessageTableAppSendYesOrNoLessThan(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_app_send_yes_or_no`>="+messageTableAppSendYesOrNo+" ";
+				condition123 += "and `message_table_app_send_yes_or_no`<'"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`>="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`<'"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableAppSendYesOrNoGreadterThanAndEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableAppSendYesOrNoLessThan(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_app_send_yes_or_no`>="+messageTableAppSendYesOrNo+" ";
+				condition123 += "or `message_table_app_send_yes_or_no`<'"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`>="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`<'"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableAppSendYesOrNoLessThanAndEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableAppSendYesOrNoGreadterThanAndEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_app_send_yes_or_no`<="+messageTableAppSendYesOrNo+" ";
+				condition123 += "and `message_table_app_send_yes_or_no`>='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`<="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`>='"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableAppSendYesOrNoLessThanAndEquals(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableAppSendYesOrNoGreadterThanAndEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_app_send_yes_or_no`<="+messageTableAppSendYesOrNo+" ";
+				condition123 += "or `message_table_app_send_yes_or_no`>='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no`<="+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`>='"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public MessageTableCriteria andMessageTableAppSendYesOrNoLike(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria andMessageTableAppSendYesOrNoLessThanAndEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `message_table_app_send_yes_or_no` like "+messageTableAppSendYesOrNo+" ";
+				condition123 += "and `message_table_app_send_yes_or_no`<='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no` like "+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`<='"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
 	}
-	public MessageTableCriteria orMessageTableAppSendYesOrNoLike(Integer messageTableAppSendYesOrNo){
-		if(messageTableAppSendYesOrNo!=null){
+	public MessageTableCriteria orMessageTableAppSendYesOrNoLessThanAndEquals(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `message_table_app_send_yes_or_no` like "+messageTableAppSendYesOrNo+" ";
+				condition123 += "or `message_table_app_send_yes_or_no`<='"+messageTableAppSendYesOrNo+"' ";
 			}else{
-				condition123 += "`message_table_app_send_yes_or_no` like "+messageTableAppSendYesOrNo+" ";
+				condition123 += "`message_table_app_send_yes_or_no`<='"+messageTableAppSendYesOrNo+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public MessageTableCriteria andMessageTableAppSendYesOrNoLike(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0&&!("%".equals(messageTableAppSendYesOrNo.trim()))&&!("%%".equals(messageTableAppSendYesOrNo.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `message_table_app_send_yes_or_no` like '"+messageTableAppSendYesOrNo+"' ";
+			}else{
+				condition123 += "`message_table_app_send_yes_or_no` like '"+messageTableAppSendYesOrNo+"' ";
+			}
+		}
+		return this;
+	}
+	public MessageTableCriteria orMessageTableAppSendYesOrNoLike(String messageTableAppSendYesOrNo){
+		if(messageTableAppSendYesOrNo!=null&&messageTableAppSendYesOrNo.trim().length()>0&&!("%".equals(messageTableAppSendYesOrNo.trim()))&&!("%%".equals(messageTableAppSendYesOrNo.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `message_table_app_send_yes_or_no` like '"+messageTableAppSendYesOrNo+"' ";
+			}else{
+				condition123 += "`message_table_app_send_yes_or_no` like '"+messageTableAppSendYesOrNo+"' ";
 			}
 		}
 		return this;
@@ -1861,8 +1909,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria andMessageTableAppSendYesOrNoIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "and `message_table_app_send_yes_or_no` in("+value+") ";
 			}else{
@@ -1871,8 +1931,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria orMessageTableAppSendYesOrNoIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "or `message_table_app_send_yes_or_no` in("+value+") ";
 			}else{
@@ -1881,8 +1953,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria andMessageTableAppSendYesOrNoNotIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "and `message_table_app_send_yes_or_no` not in("+value+") ";
 			}else{
@@ -1891,8 +1975,20 @@ public class MessageTableCriteria extends MessageTable{
 		}
 		return this;
 	}
+	
 	public MessageTableCriteria orMessageTableAppSendYesOrNoNotIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "or `message_table_app_send_yes_or_no` not in("+value+") ";
 			}else{
@@ -2451,7 +2547,7 @@ public class MessageTableCriteria extends MessageTable{
 	}
 
 	private void initMessageTable(MessageTable messageTable) {
-		super.setMessageId(messageTable.getMessageId());
+		super.setId(messageTable.getId());
 		super.setMessageTableSender(messageTable.getMessageTableSender());
 		super.setMessageTableRecipient(messageTable.getMessageTableRecipient());
 		super.setMessageTableContent(messageTable.getMessageTableContent());

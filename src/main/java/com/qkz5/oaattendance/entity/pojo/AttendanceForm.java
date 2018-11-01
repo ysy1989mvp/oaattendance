@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe AttendanceForm实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,7 +17,7 @@ public class AttendanceForm implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//考勤表id
-	private Integer attendanceId;
+	private Integer id;
 	//用户id
 	private Integer userId;
 	//打卡时间
@@ -38,12 +38,12 @@ public class AttendanceForm implements Serializable{
 
 
 	}
-	public Integer getAttendanceId() {
-		return attendanceId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setAttendanceId(Integer attendanceId) {
-		this.attendanceId = attendanceId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public Integer getUserId() {
@@ -111,6 +111,6 @@ public class AttendanceForm implements Serializable{
 	}
 
 public String toString() {
-		return "AttendanceForm [attendanceId=" + attendanceId + ", userId=" + userId + ", attendanceFormClockTime=" + attendanceFormClockTime + ", attendanceFormClockStatus=" + attendanceFormClockStatus + ", attendanceClosingBusinessHoursType=" + attendanceClosingBusinessHoursType + ", attendanceFormClockAddress=" + attendanceFormClockAddress + ", specialTimeStatistics=" + specialTimeStatistics + ", status=" + status + ", createTime=" + createTime+"]";
+		return "AttendanceForm [id=" + id + ", userId=" + userId + ", attendanceFormClockTime=" + attendanceFormClockTime + ", attendanceFormClockStatus=" + attendanceFormClockStatus + ", attendanceClosingBusinessHoursType=" + attendanceClosingBusinessHoursType + ", attendanceFormClockAddress=" + attendanceFormClockAddress + ", specialTimeStatistics=" + specialTimeStatistics + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

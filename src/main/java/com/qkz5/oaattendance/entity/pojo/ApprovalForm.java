@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe ApprovalForm实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,9 +17,11 @@ public class ApprovalForm implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//审批表id
-	private Integer approvalFormId;
+	private Integer id;
 	//申请id
 	private Integer applicationId;
+	//申请表的id用于与审批表做关联查询
+	private Integer applicationFormId;
 	//审批人
 	private String approvalFormApprover;
 	//审批顺序
@@ -38,12 +40,12 @@ public class ApprovalForm implements Serializable{
 
 
 	}
-	public Integer getApprovalFormId() {
-		return approvalFormId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setApprovalFormId(Integer approvalFormId) {
-		this.approvalFormId = approvalFormId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public Integer getApplicationId() {
@@ -52,6 +54,14 @@ public class ApprovalForm implements Serializable{
 
 	public void setApplicationId(Integer applicationId) {
 		this.applicationId = applicationId;
+	}
+
+	public Integer getApplicationFormId() {
+		return applicationFormId;
+	}
+
+	public void setApplicationFormId(Integer applicationFormId) {
+		this.applicationFormId = applicationFormId;
 	}
 
 	public String getApprovalFormApprover() {
@@ -111,6 +121,6 @@ public class ApprovalForm implements Serializable{
 	}
 
 public String toString() {
-		return "ApprovalForm [approvalFormId=" + approvalFormId + ", applicationId=" + applicationId + ", approvalFormApprover=" + approvalFormApprover + ", approvalFormOrder=" + approvalFormOrder + ", approvalFormThroughOrNot=" + approvalFormThroughOrNot + ", approvalFormLastestApproverOrNot=" + approvalFormLastestApproverOrNot + ", approvalTime=" + approvalTime + ", status=" + status + ", createTime=" + createTime+"]";
+		return "ApprovalForm [id=" + id + ", applicationId=" + applicationId + ", applicationFormId=" + applicationFormId + ", approvalFormApprover=" + approvalFormApprover + ", approvalFormOrder=" + approvalFormOrder + ", approvalFormThroughOrNot=" + approvalFormThroughOrNot + ", approvalFormLastestApproverOrNot=" + approvalFormLastestApproverOrNot + ", approvalTime=" + approvalTime + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

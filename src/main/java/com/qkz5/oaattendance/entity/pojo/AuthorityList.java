@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe AuthorityList实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,7 +17,7 @@ public class AuthorityList implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//权限表id
-	private Integer authorityListId;
+	private Integer id;
 	//权限分类
 	private String authorityListClassify;
 	//权限名称
@@ -32,12 +32,12 @@ public class AuthorityList implements Serializable{
 
 
 	}
-	public Integer getAuthorityListId() {
-		return authorityListId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setAuthorityListId(Integer authorityListId) {
-		this.authorityListId = authorityListId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getAuthorityListClassify() {
@@ -81,6 +81,6 @@ public class AuthorityList implements Serializable{
 	}
 
 public String toString() {
-		return "AuthorityList [authorityListId=" + authorityListId + ", authorityListClassify=" + authorityListClassify + ", authorityListName=" + authorityListName + ", authorityId=" + authorityId + ", status=" + status + ", createTime=" + createTime+"]";
+		return "AuthorityList [id=" + id + ", authorityListClassify=" + authorityListClassify + ", authorityListName=" + authorityListName + ", authorityId=" + authorityId + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

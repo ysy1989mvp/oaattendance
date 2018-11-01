@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe CharacterTable实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,7 +17,7 @@ public class CharacterTable implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//角色表id
-	private Integer characterTableId;
+	private Integer id;
 	//角色名称
 	private String characterName;
 	//权限模块
@@ -32,12 +32,12 @@ public class CharacterTable implements Serializable{
 
 
 	}
-	public Integer getCharacterTableId() {
-		return characterTableId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setCharacterTableId(Integer characterTableId) {
-		this.characterTableId = characterTableId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getCharacterName() {
@@ -81,6 +81,6 @@ public class CharacterTable implements Serializable{
 	}
 
 public String toString() {
-		return "CharacterTable [characterTableId=" + characterTableId + ", characterName=" + characterName + ", authorityModules=" + authorityModules + ", specificAuthority=" + specificAuthority + ", status=" + status + ", createTime=" + createTime+"]";
+		return "CharacterTable [id=" + id + ", characterName=" + characterName + ", authorityModules=" + authorityModules + ", specificAuthority=" + specificAuthority + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

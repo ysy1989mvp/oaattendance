@@ -128,44 +128,44 @@ public class CharacterTableCriteria extends CharacterTable{
 
 /************以下为纯条件的拼接*******************/
 
-	public CharacterTableCriteria andCharacterTableIdEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id`="+characterTableId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`character_table_id`="+characterTableId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public CharacterTableCriteria orCharacterTableIdEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `character_table_id`="+characterTableId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`character_table_id`="+characterTableId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public CharacterTableCriteria andCharacterTableIdNotEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id`!="+characterTableId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`character_table_id`!="+characterTableId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdNotEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `character_table_id`!="+characterTableId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`character_table_id`!="+characterTableId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class CharacterTableCriteria extends CharacterTable{
 	 * @param 
 	 * @return
 	 */
-	public CharacterTableCriteria andCharacterTableIdGreaterThan(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id`>"+characterTableId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`character_table_id`>"+characterTableId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdGreaterThan(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `character_table_id`>"+characterTableId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`character_table_id`>"+characterTableId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public CharacterTableCriteria andCharacterTableIdLessThan(Integer characterTableId){
-		if(characterTableId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `character_table_id`<"+characterTableId+" ";
-			}else{
-				condition123 += "`character_table_id`<"+characterTableId+" ";
-			}
-		}
-		return this;
-	}
-	public CharacterTableCriteria orCharacterTableIdLessThan(Integer characterTableId){
-		if(characterTableId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `character_table_id`<"+characterTableId+" ";
-			}else{
-				condition123 += "`character_table_id`<"+characterTableId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public CharacterTableCriteria andCharacterTableIdGreadterThanAndEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	
+	public CharacterTableCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id`>="+characterTableId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`character_table_id`>="+characterTableId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdGreadterThanAndEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `character_table_id`>="+characterTableId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`character_table_id`>="+characterTableId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public CharacterTableCriteria andCharacterTableIdLessThanAndEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id`<="+characterTableId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`character_table_id`<="+characterTableId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdLessThanAndEquals(Integer characterTableId){
-		if(characterTableId!=null){
+	public CharacterTableCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `character_table_id`<="+characterTableId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`character_table_id`<="+characterTableId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public CharacterTableCriteria andCharacterTableIdLike(Integer characterTableId){
-		if(characterTableId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `character_table_id` like "+characterTableId+" ";
-			}else{
-				condition123 += "`character_table_id` like "+characterTableId+" ";
-			}
-		}
-		return this;
-	}
-	public CharacterTableCriteria orCharacterTableIdLike(Integer characterTableId){
-		if(characterTableId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `character_table_id` like "+characterTableId+" ";
-			}else{
-				condition123 += "`character_table_id` like "+characterTableId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public CharacterTableCriteria andCharacterTableIdIsNull(){
+	public CharacterTableCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`character_table_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public CharacterTableCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public CharacterTableCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public CharacterTableCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public CharacterTableCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdIsNull(){
+	public CharacterTableCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `character_table_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`character_table_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public CharacterTableCriteria andCharacterTableIdIsNotNull(){
+	public CharacterTableCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `character_table_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`character_table_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdIsNotNull(){
+	public CharacterTableCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `character_table_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`character_table_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public CharacterTableCriteria andCharacterTableIdIn(String value){
+	public CharacterTableCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`character_table_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdIn(String value){
+	public CharacterTableCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `character_table_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`character_table_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public CharacterTableCriteria andCharacterTableIdNotIn(String value){
+	public CharacterTableCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `character_table_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`character_table_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public CharacterTableCriteria orCharacterTableIdNotIn(String value){
+	public CharacterTableCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `character_table_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`character_table_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -1725,7 +1725,7 @@ public class CharacterTableCriteria extends CharacterTable{
 	}
 
 	private void initCharacterTable(CharacterTable characterTable) {
-		super.setCharacterTableId(characterTable.getCharacterTableId());
+		super.setId(characterTable.getId());
 		super.setCharacterName(characterTable.getCharacterName());
 		super.setAuthorityModules(characterTable.getAuthorityModules());
 		super.setSpecificAuthority(characterTable.getSpecificAuthority());

@@ -17,7 +17,7 @@ public class EmployeeBasicInformation implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//id
-	private Integer employeeId;
+	private Integer id;
 	//工号
 	private Integer workId;
 	//密码
@@ -60,12 +60,12 @@ public class EmployeeBasicInformation implements Serializable{
 
 
 	}
-	public Integer getEmployeeId() {
-		return employeeId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setEmployeeId(Integer employeeId) {
-		this.employeeId = employeeId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public Integer getWorkId() {
@@ -221,6 +221,6 @@ public class EmployeeBasicInformation implements Serializable{
 	}
 
 public String toString() {
-		return "EmployeeBasicInformation [employeeId=" + employeeId + ", workId=" + workId + ", password=" + password + ", name=" + name + ", gender=" + gender + ", age=" + age + ", nationality=" + nationality + ", telephone=" + telephone + ", departmentName=" + departmentName + ", position=" + position + ", politicsStatus=" + politicsStatus + ", identityCardNumber=" + identityCardNumber + ", emergencContact=" + emergencContact + ", emergencContactTelphone=" + emergencContactTelphone + ", employeeAddress=" + employeeAddress + ", degreeOfEducation=" + degreeOfEducation + ", schoolOfGraduation=" + schoolOfGraduation + ", major=" + major + ", status=" + status + ", createTime=" + createTime+"]";
+		return "EmployeeBasicInformation [id=" + id + ", workId=" + workId + ", password=" + password + ", name=" + name + ", gender=" + gender + ", age=" + age + ", nationality=" + nationality + ", telephone=" + telephone + ", departmentName=" + departmentName + ", position=" + position + ", politicsStatus=" + politicsStatus + ", identityCardNumber=" + identityCardNumber + ", emergencContact=" + emergencContact + ", emergencContactTelphone=" + emergencContactTelphone + ", employeeAddress=" + employeeAddress + ", degreeOfEducation=" + degreeOfEducation + ", schoolOfGraduation=" + schoolOfGraduation + ", major=" + major + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

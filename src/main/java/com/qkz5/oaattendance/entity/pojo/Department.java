@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe Department实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -17,7 +17,7 @@ public class Department implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	//id
-	private Integer departmentId;
+	private Integer id;
 	//部门编号
 	private Integer departmentNumber;
 	//部门名称
@@ -36,12 +36,12 @@ public class Department implements Serializable{
 
 
 	}
-	public Integer getDepartmentId() {
-		return departmentId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setDepartmentId(Integer departmentId) {
-		this.departmentId = departmentId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public Integer getDepartmentNumber() {
@@ -101,6 +101,6 @@ public class Department implements Serializable{
 	}
 
 public String toString() {
-		return "Department [departmentId=" + departmentId + ", departmentNumber=" + departmentNumber + ", departmentName=" + departmentName + ", departmentAddress=" + departmentAddress + ", departmentLeader=" + departmentLeader + ", departmentIntro=" + departmentIntro + ", status=" + status + ", createTime=" + createTime+"]";
+		return "Department [id=" + id + ", departmentNumber=" + departmentNumber + ", departmentName=" + departmentName + ", departmentAddress=" + departmentAddress + ", departmentLeader=" + departmentLeader + ", departmentIntro=" + departmentIntro + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

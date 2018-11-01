@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.IApprovalFormDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.ApprovalFormAO" >
-		<result column="approval_form_id" property="approvalFormId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="application_id" property="applicationId" jdbcType="BIGINT" />
 		<result column="application_form_id" property="applicationFormId" jdbcType="BIGINT" />
 		<result column="approval_form_approver" property="approvalFormApprover" jdbcType="VARCHAR" />
@@ -15,7 +15,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`approval_form_id`,`application_id`,`application_form_id`,`approval_form_approver`,`approval_form_order`,`approval_form_through_or_not`,`approval_form_lastest_approver_or_not`,`approval_time`,`status`,`create_time`
+		`id`,`application_id`,`application_form_id`,`approval_form_approver`,`approval_form_order`,`approval_form_through_or_not`,`approval_form_lastest_approver_or_not`,`approval_time`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -44,8 +44,8 @@
 	<insert id="addApprovalForm" parameterType="com.qkz5.oaattendance.entity.pojo.ApprovalForm"  keyProperty="id" useGeneratedKeys="true">
 		insert into `approval_form` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="approvalFormId != null" >
-				`approval_form_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="applicationId != null" >
 				`application_id`, 
@@ -76,8 +76,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="approvalFormId != null" >
-				#{approvalFormId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="applicationId != null" >
 				#{applicationId,jdbcType=INT},
@@ -112,8 +112,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.ApprovalForm" >
 		update `approval_form`
 		<set >
-			<if test="approvalFormId != null" >
-				`approval_form_id` = #{approvalFormId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="applicationId != null" >
 				`application_id` = #{applicationId,jdbcType=INT},
@@ -149,8 +149,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.ApprovalFormCriteria" >
 		update `approval_form`
 		<set >
-			<if test="approvalFormId != null" >
-				`approval_form_id` = #{approvalFormId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="applicationId != null" >
 				`application_id` = #{applicationId,jdbcType=INT},

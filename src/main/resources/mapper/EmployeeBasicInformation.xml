@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.IEmployeeBasicInformationDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.EmployeeBasicInformationAO" >
-		<result column="employee_id" property="employeeId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="work_id" property="workId" jdbcType="BIGINT" />
 		<result column="password" property="password" jdbcType="VARCHAR" />
 		<result column="name" property="name" jdbcType="VARCHAR" />
@@ -25,7 +25,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`employee_id`,`work_id`,`password`,`name`,`gender`,`age`,`nationality`,`telephone`,`department_name`,`position`,`politics_status`,`identity_card_number`,`emergenc_contact`,`emergenc_contact_telphone`,`employee_address`,`degree_of_education`,`school_of_graduation`,`major`,`status`,`create_time`
+		`id`,`work_id`,`password`,`name`,`gender`,`age`,`nationality`,`telephone`,`department_name`,`position`,`politics_status`,`identity_card_number`,`emergenc_contact`,`emergenc_contact_telphone`,`employee_address`,`degree_of_education`,`school_of_graduation`,`major`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -54,8 +54,8 @@
 	<insert id="addEmployeeBasicInformation" parameterType="com.qkz5.oaattendance.entity.pojo.EmployeeBasicInformation"  keyProperty="id" useGeneratedKeys="true">
 		insert into `employee_basic_information` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="employeeId != null" >
-				`employee_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="workId != null" >
 				`work_id`, 
@@ -116,8 +116,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="employeeId != null" >
-				#{employeeId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="workId != null" >
 				#{workId,jdbcType=INT},
@@ -182,8 +182,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.EmployeeBasicInformation" >
 		update `employee_basic_information`
 		<set >
-			<if test="employeeId != null" >
-				`employee_id` = #{employeeId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="workId != null" >
 				`work_id` = #{workId,jdbcType=INT},
@@ -249,8 +249,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.EmployeeBasicInformationCriteria" >
 		update `employee_basic_information`
 		<set >
-			<if test="employeeId != null" >
-				`employee_id` = #{employeeId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="workId != null" >
 				`work_id` = #{workId,jdbcType=INT},

@@ -128,44 +128,44 @@ public class AuthorityListCriteria extends AuthorityList{
 
 /************以下为纯条件的拼接*******************/
 
-	public AuthorityListCriteria andAuthorityListIdEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id`="+authorityListId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`authority_list_id`="+authorityListId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AuthorityListCriteria orAuthorityListIdEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `authority_list_id`="+authorityListId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`authority_list_id`="+authorityListId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AuthorityListCriteria andAuthorityListIdNotEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id`!="+authorityListId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`authority_list_id`!="+authorityListId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdNotEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `authority_list_id`!="+authorityListId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`authority_list_id`!="+authorityListId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,180 @@ public class AuthorityListCriteria extends AuthorityList{
 	 * @param 
 	 * @return
 	 */
-	public AuthorityListCriteria andAuthorityListIdGreaterThan(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id`>"+authorityListId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`authority_list_id`>"+authorityListId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdGreaterThan(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `authority_list_id`>"+authorityListId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`authority_list_id`>"+authorityListId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public AuthorityListCriteria andAuthorityListIdLessThan(Integer authorityListId){
-		if(authorityListId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `authority_list_id`<"+authorityListId+" ";
-			}else{
-				condition123 += "`authority_list_id`<"+authorityListId+" ";
-			}
-		}
-		return this;
-	}
-	public AuthorityListCriteria orAuthorityListIdLessThan(Integer authorityListId){
-		if(authorityListId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `authority_list_id`<"+authorityListId+" ";
-			}else{
-				condition123 += "`authority_list_id`<"+authorityListId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AuthorityListCriteria andAuthorityListIdGreadterThanAndEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	
+	public AuthorityListCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id`>="+authorityListId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`authority_list_id`>="+authorityListId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdGreadterThanAndEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `authority_list_id`>="+authorityListId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`authority_list_id`>="+authorityListId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AuthorityListCriteria andAuthorityListIdLessThanAndEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id`<="+authorityListId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`authority_list_id`<="+authorityListId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdLessThanAndEquals(Integer authorityListId){
-		if(authorityListId!=null){
+	public AuthorityListCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `authority_list_id`<="+authorityListId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`authority_list_id`<="+authorityListId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public AuthorityListCriteria andAuthorityListIdLike(Integer authorityListId){
-		if(authorityListId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `authority_list_id` like "+authorityListId+" ";
-			}else{
-				condition123 += "`authority_list_id` like "+authorityListId+" ";
-			}
-		}
-		return this;
-	}
-	public AuthorityListCriteria orAuthorityListIdLike(Integer authorityListId){
-		if(authorityListId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `authority_list_id` like "+authorityListId+" ";
-			}else{
-				condition123 += "`authority_list_id` like "+authorityListId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public AuthorityListCriteria andAuthorityListIdIsNull(){
+	public AuthorityListCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`authority_list_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public AuthorityListCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public AuthorityListCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public AuthorityListCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public AuthorityListCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdIsNull(){
+	public AuthorityListCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `authority_list_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`authority_list_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public AuthorityListCriteria andAuthorityListIdIsNotNull(){
+	public AuthorityListCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `authority_list_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`authority_list_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdIsNotNull(){
+	public AuthorityListCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `authority_list_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`authority_list_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public AuthorityListCriteria andAuthorityListIdIn(String value){
+	public AuthorityListCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`authority_list_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdIn(String value){
+	public AuthorityListCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `authority_list_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`authority_list_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AuthorityListCriteria andAuthorityListIdNotIn(String value){
+	public AuthorityListCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `authority_list_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`authority_list_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public AuthorityListCriteria orAuthorityListIdNotIn(String value){
+	public AuthorityListCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `authority_list_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`authority_list_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
@@ -1677,7 +1677,7 @@ public class AuthorityListCriteria extends AuthorityList{
 	}
 
 	private void initAuthorityList(AuthorityList authorityList) {
-		super.setAuthorityListId(authorityList.getAuthorityListId());
+		super.setId(authorityList.getId());
 		super.setAuthorityListClassify(authorityList.getAuthorityListClassify());
 		super.setAuthorityListName(authorityList.getAuthorityListName());
 		super.setAuthorityId(authorityList.getAuthorityId());

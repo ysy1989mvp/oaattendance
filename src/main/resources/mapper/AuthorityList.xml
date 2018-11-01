@@ -3,7 +3,7 @@
 <!--  指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->
 <mapper namespace="com.qkz5.oaattendance.dao.IAuthorityListDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.AuthorityListAO" >
-		<result column="authority_list_id" property="authorityListId" jdbcType="BIGINT" />
+		<result column="id" property="id" jdbcType="BIGINT" />
 		<result column="authority_list_classify" property="authorityListClassify" jdbcType="VARCHAR" />
 		<result column="authority_list_name" property="authorityListName" jdbcType="VARCHAR" />
 		<result column="authority_id" property="authorityId" jdbcType="BIGINT" />
@@ -11,7 +11,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`authority_list_id`,`authority_list_classify`,`authority_list_name`,`authority_id`,`status`,`create_time`
+		`id`,`authority_list_classify`,`authority_list_name`,`authority_id`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -40,8 +40,8 @@
 	<insert id="addAuthorityList" parameterType="com.qkz5.oaattendance.entity.pojo.AuthorityList"  keyProperty="id" useGeneratedKeys="true">
 		insert into `authority_list` 
 		<trim prefix="(" suffix=")" suffixOverrides="," >
-			<if test="authorityListId != null" >
-				`authority_list_id`, 
+			<if test="id != null" >
+				`id`, 
 			</if>
 			<if test="authorityListClassify != null" >
 				`authority_list_classify`, 
@@ -60,8 +60,8 @@
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
-			<if test="authorityListId != null" >
-				#{authorityListId,jdbcType=INT},
+			<if test="id != null" >
+				#{id,jdbcType=INT},
 			</if>
 			<if test="authorityListClassify != null" >
 				#{authorityListClassify,jdbcType=VARCHAR},
@@ -84,8 +84,8 @@
 	<update id="updateById" parameterType="com.qkz5.oaattendance.entity.pojo.AuthorityList" >
 		update `authority_list`
 		<set >
-			<if test="authorityListId != null" >
-				`authority_list_id` = #{authorityListId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="authorityListClassify != null" >
 				`authority_list_classify` = #{authorityListClassify,jdbcType=VARCHAR},
@@ -109,8 +109,8 @@
 	<update id="updateByCriteria" parameterType="com.qkz5.oaattendance.criteria.AuthorityListCriteria" >
 		update `authority_list`
 		<set >
-			<if test="authorityListId != null" >
-				`authority_list_id` = #{authorityListId,jdbcType=INT},
+			<if test="id != null" >
+				`id` = #{id,jdbcType=INT},
 			</if>
 			<if test="authorityListClassify != null" >
 				`authority_list_classify` = #{authorityListClassify,jdbcType=VARCHAR},

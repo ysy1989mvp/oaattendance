@@ -128,44 +128,44 @@ public class ApplicationFormCriteria extends ApplicationForm{
 
 /************以下为纯条件的拼接*******************/
 
-	public ApplicationFormCriteria andApplicationIdEquals(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria andIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `application_id`="+applicationId+" ";
+				condition123 += "and `id`="+id+" ";
 			}else{
-				condition123 += "`application_id`="+applicationId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApplicationFormCriteria orApplicationIdEquals(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria orIdEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `application_id`="+applicationId+" ";
+				condition123 += "or `id`="+id+" ";
 			}else{
-				condition123 += "`application_id`="+applicationId+" ";
+				condition123 += "`id`="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApplicationFormCriteria andApplicationIdNotEquals(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria andIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `application_id`!="+applicationId+" ";
+				condition123 += "and `id`!="+id+" ";
 			}else{
-				condition123 += "`application_id`!="+applicationId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdNotEquals(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria orIdNotEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `application_id`!="+applicationId+" ";
+				condition123 += "or `id`!="+id+" ";
 			}else{
-				condition123 += "`application_id`!="+applicationId+" ";
+				condition123 += "`id`!="+id+" ";
 			}
 		}
 		return this;
@@ -175,180 +175,680 @@ public class ApplicationFormCriteria extends ApplicationForm{
 	 * @param 
 	 * @return
 	 */
-	public ApplicationFormCriteria andApplicationIdGreaterThan(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria andIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `application_id`>"+applicationId+" ";
+				condition123 += "and `id`>"+id+" ";
 			}else{
-				condition123 += "`application_id`>"+applicationId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdGreaterThan(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria orIdGreaterThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `application_id`>"+applicationId+" ";
+				condition123 += "or `id`>"+id+" ";
 			}else{
-				condition123 += "`application_id`>"+applicationId+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public ApplicationFormCriteria andApplicationIdLessThan(Integer applicationId){
-		if(applicationId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `application_id`<"+applicationId+" ";
-			}else{
-				condition123 += "`application_id`<"+applicationId+" ";
-			}
-		}
-		return this;
-	}
-	public ApplicationFormCriteria orApplicationIdLessThan(Integer applicationId){
-		if(applicationId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `application_id`<"+applicationId+" ";
-			}else{
-				condition123 += "`application_id`<"+applicationId+" ";
+				condition123 += "`id`>"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApplicationFormCriteria andApplicationIdGreadterThanAndEquals(Integer applicationId){
-		if(applicationId!=null){
+	
+	public ApplicationFormCriteria andIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `application_id`>="+applicationId+" ";
+				condition123 += "and `id`<"+id+" ";
 			}else{
-				condition123 += "`application_id`>="+applicationId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdGreadterThanAndEquals(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria orIdLessThan(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `application_id`>="+applicationId+" ";
+				condition123 += "or `id`<"+id+" ";
 			}else{
-				condition123 += "`application_id`>="+applicationId+" ";
+				condition123 += "`id`<"+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApplicationFormCriteria andApplicationIdLessThanAndEquals(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria andIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `application_id`<="+applicationId+" ";
+				condition123 += "and `id`>="+id+" ";
 			}else{
-				condition123 += "`application_id`<="+applicationId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdLessThanAndEquals(Integer applicationId){
-		if(applicationId!=null){
+	public ApplicationFormCriteria orIdGreadterThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "or `application_id`<="+applicationId+" ";
+				condition123 += "or `id`>="+id+" ";
 			}else{
-				condition123 += "`application_id`<="+applicationId+" ";
-			}
-		}
-		return this;
-	}
-	
-	public ApplicationFormCriteria andApplicationIdLike(Integer applicationId){
-		if(applicationId!=null){
-			if(condition123.length()>0){
-				condition123 += "and `application_id` like "+applicationId+" ";
-			}else{
-				condition123 += "`application_id` like "+applicationId+" ";
-			}
-		}
-		return this;
-	}
-	public ApplicationFormCriteria orApplicationIdLike(Integer applicationId){
-		if(applicationId!=null){
-			if(condition123.length()>0){
-				condition123 += "or `application_id` like "+applicationId+" ";
-			}else{
-				condition123 += "`application_id` like "+applicationId+" ";
+				condition123 += "`id`>="+id+" ";
 			}
 		}
 		return this;
 	}
 	
-	public ApplicationFormCriteria andApplicationIdIsNull(){
+	public ApplicationFormCriteria andIdLessThanAndEquals(Integer id){
+		if(id!=null){
 			if(condition123.length()>0){
-				condition123 += "and `application_id` is null";
+				condition123 += "and `id`<="+id+" ";
 			}else{
-				condition123 += "`application_id` is null";
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orIdLessThanAndEquals(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id`<="+id+" ";
+			}else{
+				condition123 += "`id`<="+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "and `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orIdLike(Integer id){
+		if(id!=null){
+			if(condition123.length()>0){
+				condition123 += "or `id` like "+id+" ";
+			}else{
+				condition123 += "`id` like "+id+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `id` is null";
+			}else{
+				condition123 += "`id` is null";
 			}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdIsNull(){
+	public ApplicationFormCriteria orIdIsNull(){
 		if(condition123.length()>0){
-			condition123 += "or `application_id` is null";
+			condition123 += "or `id` is null";
 		}else{
-			condition123 += "`application_id` is null";
+			condition123 += "`id` is null";
 		}
 		return this;
 	}
-	public ApplicationFormCriteria andApplicationIdIsNotNull(){
+	public ApplicationFormCriteria andIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "and `application_id` is not null";
+			condition123 += "and `id` is not null";
 		}else{
-			condition123 += "`application_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdIsNotNull(){
+	public ApplicationFormCriteria orIdIsNotNull(){
 		if(condition123.length()>0){
-			condition123 += "or `application_id` is not null";
+			condition123 += "or `id` is not null";
 		}else{
-			condition123 += "`application_id` is not null";
+			condition123 += "`id` is not null";
 		}
 		return this;
 	}
-	public ApplicationFormCriteria andApplicationIdIn(String value){
+	public ApplicationFormCriteria andIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `application_id` in("+value+") ";
+				condition123 += "and `id` in("+value+") ";
 			}else{
-				condition123 += "`application_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdIn(String value){
+	public ApplicationFormCriteria orIdIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `application_id` in("+value+") ";
+				condition123 += "or `id` in("+value+") ";
 			}else{
-				condition123 += "`application_id` in("+value+") ";
+				condition123 += "`id` in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public ApplicationFormCriteria andApplicationIdNotIn(String value){
+	public ApplicationFormCriteria andIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `application_id` not in("+value+") ";
+				condition123 += "and `id` not in("+value+") ";
 			}else{
-				condition123 += "`application_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
 			}
 		}
 		return this;
 	}
-	public ApplicationFormCriteria orApplicationIdNotIn(String value){
+	public ApplicationFormCriteria orIdNotIn(String value){
 		if(value!=null && value.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `application_id` not in("+value+") ";
+				condition123 += "or `id` not in("+value+") ";
 			}else{
-				condition123 += "`application_id` not in("+value+") ";
+				condition123 += "`id` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+
+	public ApplicationFormCriteria andApplicationUserIdEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id`="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria orApplicationUserIdEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id`="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserIdNotEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id`!="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`!="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdNotEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id`!="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`!="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	/**
+	 * 大于
+	 * @param 
+	 * @return
+	 */
+	public ApplicationFormCriteria andApplicationUserIdGreaterThan(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id`>"+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`>"+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdGreaterThan(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id`>"+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`>"+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	
+	
+	public ApplicationFormCriteria andApplicationUserIdLessThan(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id`<"+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`<"+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdLessThan(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id`<"+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`<"+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserIdGreadterThanAndEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id`>="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`>="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdGreadterThanAndEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id`>="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`>="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserIdLessThanAndEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id`<="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`<="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdLessThanAndEquals(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id`<="+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id`<="+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserIdLike(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id` like "+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id` like "+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdLike(Integer applicationUserId){
+		if(applicationUserId!=null){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id` like "+applicationUserId+" ";
+			}else{
+				condition123 += "`application_user_id` like "+applicationUserId+" ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserIdIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id` is null";
+			}else{
+				condition123 += "`application_user_id` is null";
+			}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdIsNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_user_id` is null";
+		}else{
+			condition123 += "`application_user_id` is null";
+		}
+		return this;
+	}
+	public ApplicationFormCriteria andApplicationUserIdIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "and `application_user_id` is not null";
+		}else{
+			condition123 += "`application_user_id` is not null";
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_user_id` is not null";
+		}else{
+			condition123 += "`application_user_id` is not null";
+		}
+		return this;
+	}
+	public ApplicationFormCriteria andApplicationUserIdIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id` in("+value+") ";
+			}else{
+				condition123 += "`application_user_id` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id` in("+value+") ";
+			}else{
+				condition123 += "`application_user_id` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria andApplicationUserIdNotIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user_id` not in("+value+") ";
+			}else{
+				condition123 += "`application_user_id` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIdNotIn(String value){
+		if(value!=null && value.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user_id` not in("+value+") ";
+			}else{
+				condition123 += "`application_user_id` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+
+	public ApplicationFormCriteria andApplicationUserEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user`='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria orApplicationUserEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user`='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserNotEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user`!='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`!='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserNotEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user`!='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`!='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	/**
+	 * 大于
+	 * @param 
+	 * @return
+	 */
+	public ApplicationFormCriteria andApplicationUserGreaterThan(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user`>'"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`>'"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserGreaterThan(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user`>'"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`>'"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	
+	
+	public ApplicationFormCriteria andApplicationUserLessThan(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user`<'"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`<'"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserLessThan(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user`<'"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`<'"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserGreadterThanAndEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user`>='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`>='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserGreadterThanAndEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user`>='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`>='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserLessThanAndEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_user`<='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`<='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserLessThanAndEquals(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_user`<='"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user`<='"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserLike(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0&&!("%".equals(applicationUser.trim()))&&!("%%".equals(applicationUser.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `application_user` like '"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user` like '"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserLike(String applicationUser){
+		if(applicationUser!=null&&applicationUser.trim().length()>0&&!("%".equals(applicationUser.trim()))&&!("%%".equals(applicationUser.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `application_user` like '"+applicationUser+"' ";
+			}else{
+				condition123 += "`application_user` like '"+applicationUser+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `application_user` is null";
+			}else{
+				condition123 += "`application_user` is null";
+			}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIsNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_user` is null";
+		}else{
+			condition123 += "`application_user` is null";
+		}
+		return this;
+	}
+	public ApplicationFormCriteria andApplicationUserIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "and `application_user` is not null";
+		}else{
+			condition123 += "`application_user` is not null";
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationUserIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_user` is not null";
+		}else{
+			condition123 += "`application_user` is not null";
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `application_user` in("+value+") ";
+			}else{
+				condition123 += "`application_user` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria orApplicationUserIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `application_user` in("+value+") ";
+			}else{
+				condition123 += "`application_user` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationUserNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `application_user` not in("+value+") ";
+			}else{
+				condition123 += "`application_user` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria orApplicationUserNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `application_user` not in("+value+") ";
+			}else{
+				condition123 += "`application_user` not in("+value+") ";
 			}
 		}
 		return this;
@@ -2272,6 +2772,280 @@ public class ApplicationFormCriteria extends ApplicationForm{
 		return this;
 	}
 
+	public ApplicationFormCriteria andApplicationCreatetimeEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime`='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria orApplicationCreatetimeEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime`='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationCreatetimeNotEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime`!='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`!='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeNotEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime`!='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`!='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	/**
+	 * 大于
+	 * @param 
+	 * @return
+	 */
+	public ApplicationFormCriteria andApplicationCreatetimeGreaterThan(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime`>'"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`>'"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeGreaterThan(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime`>'"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`>'"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	
+	
+	public ApplicationFormCriteria andApplicationCreatetimeLessThan(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime`<'"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`<'"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeLessThan(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime`<'"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`<'"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationCreatetimeGreadterThanAndEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime`>='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`>='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeGreadterThanAndEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime`>='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`>='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationCreatetimeLessThanAndEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime`<='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`<='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeLessThanAndEquals(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime`<='"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime`<='"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationCreatetimeLike(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0&&!("%".equals(applicationCreatetime.trim()))&&!("%%".equals(applicationCreatetime.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime` like '"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime` like '"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeLike(String applicationCreatetime){
+		if(applicationCreatetime!=null&&applicationCreatetime.trim().length()>0&&!("%".equals(applicationCreatetime.trim()))&&!("%%".equals(applicationCreatetime.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime` like '"+applicationCreatetime+"' ";
+			}else{
+				condition123 += "`application_createtime` like '"+applicationCreatetime+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationCreatetimeIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime` is null";
+			}else{
+				condition123 += "`application_createtime` is null";
+			}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeIsNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_createtime` is null";
+		}else{
+			condition123 += "`application_createtime` is null";
+		}
+		return this;
+	}
+	public ApplicationFormCriteria andApplicationCreatetimeIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "and `application_createtime` is not null";
+		}else{
+			condition123 += "`application_createtime` is not null";
+		}
+		return this;
+	}
+	public ApplicationFormCriteria orApplicationCreatetimeIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "or `application_createtime` is not null";
+		}else{
+			condition123 += "`application_createtime` is not null";
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationCreatetimeIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime` in("+value+") ";
+			}else{
+				condition123 += "`application_createtime` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria orApplicationCreatetimeIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime` in("+value+") ";
+			}else{
+				condition123 += "`application_createtime` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria andApplicationCreatetimeNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `application_createtime` not in("+value+") ";
+			}else{
+				condition123 += "`application_createtime` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public ApplicationFormCriteria orApplicationCreatetimeNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `application_createtime` not in("+value+") ";
+			}else{
+				condition123 += "`application_createtime` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+
 	public ApplicationFormCriteria andApplicationMoneyInvolvedEquals(String applicationMoneyInvolved){
 		if(applicationMoneyInvolved!=null&&applicationMoneyInvolved.trim().length()>0){
 			if(condition123.length()>0){
@@ -3095,7 +3869,9 @@ public class ApplicationFormCriteria extends ApplicationForm{
 	}
 
 	private void initApplicationForm(ApplicationForm applicationForm) {
-		super.setApplicationId(applicationForm.getApplicationId());
+		super.setId(applicationForm.getId());
+		super.setApplicationUserId(applicationForm.getApplicationUserId());
+		super.setApplicationUser(applicationForm.getApplicationUser());
 		super.setApplicationType(applicationForm.getApplicationType());
 		super.setApplicationClassify(applicationForm.getApplicationClassify());
 		super.setApplicationStartTime(applicationForm.getApplicationStartTime());
@@ -3103,6 +3879,7 @@ public class ApplicationFormCriteria extends ApplicationForm{
 		super.setApplicationDuration(applicationForm.getApplicationDuration());
 		super.setApplicationReason(applicationForm.getApplicationReason());
 		super.setApplicationCopyRecipients(applicationForm.getApplicationCopyRecipients());
+		super.setApplicationCreatetime(applicationForm.getApplicationCreatetime());
 		super.setApplicationMoneyInvolved(applicationForm.getApplicationMoneyInvolved());
 		super.setStatus(applicationForm.getStatus());
 		super.setCreateTime(applicationForm.getCreateTime());
