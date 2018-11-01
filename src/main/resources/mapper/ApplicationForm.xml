@@ -4,6 +4,8 @@
 <mapper namespace="com.qkz5.oaattendance.dao.IApplicationFormDAO">
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.ApplicationFormAO" >
 		<result column="application_id" property="applicationId" jdbcType="BIGINT" />
+		<result column="application_user_id" property="applicationUserId" jdbcType="BIGINT" />
+		<result column="application_user" property="applicationUser" jdbcType="VARCHAR" />
 		<result column="application_type" property="applicationType" jdbcType="VARCHAR" />
 		<result column="application_classify" property="applicationClassify" jdbcType="VARCHAR" />
 		<result column="application_start_time" property="applicationStartTime" jdbcType="VARCHAR" />
@@ -11,12 +13,13 @@
 		<result column="application_duration" property="applicationDuration" jdbcType="VARCHAR" />
 		<result column="application_reason" property="applicationReason" jdbcType="VARCHAR" />
 		<result column="application_copy_recipients" property="applicationCopyRecipients" jdbcType="VARCHAR" />
+		<result column="application_createtime" property="applicationCreatetime" jdbcType="VARCHAR" />
 		<result column="application_money_involved" property="applicationMoneyInvolved" jdbcType="VARCHAR" />
 		<result column="status" property="status" jdbcType="VARCHAR" />
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`application_id`,`application_type`,`application_classify`,`application_start_time`,`application_last_time`,`application_duration`,`application_reason`,`application_copy_recipients`,`application_money_involved`,`status`,`create_time`
+		`application_id`,`application_user_id`,`application_user`,`application_type`,`application_classify`,`application_start_time`,`application_last_time`,`application_duration`,`application_reason`,`application_copy_recipients`,`application_createtime`,`application_money_involved`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -48,6 +51,12 @@
 			<if test="applicationId != null" >
 				`application_id`, 
 			</if>
+			<if test="applicationUserId != null" >
+				`application_user_id`, 
+			</if>
+			<if test="applicationUser != null" >
+				`application_user`, 
+			</if>
 			<if test="applicationType != null" >
 				`application_type`, 
 			</if>
@@ -69,6 +78,9 @@
 			<if test="applicationCopyRecipients != null" >
 				`application_copy_recipients`, 
 			</if>
+			<if test="applicationCreatetime != null" >
+				`application_createtime`, 
+			</if>
 			<if test="applicationMoneyInvolved != null" >
 				`application_money_involved`, 
 			</if>
@@ -82,6 +94,12 @@
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="applicationId != null" >
 				#{applicationId,jdbcType=INT},
+			</if>
+			<if test="applicationUserId != null" >
+				#{applicationUserId,jdbcType=INT},
+			</if>
+			<if test="applicationUser != null" >
+				#{applicationUser,jdbcType=VARCHAR},
 			</if>
 			<if test="applicationType != null" >
 				#{applicationType,jdbcType=VARCHAR},
@@ -104,6 +122,9 @@
 			<if test="applicationCopyRecipients != null" >
 				#{applicationCopyRecipients,jdbcType=VARCHAR},
 			</if>
+			<if test="applicationCreatetime != null" >
+				#{applicationCreatetime,jdbcType=VARCHAR},
+			</if>
 			<if test="applicationMoneyInvolved != null" >
 				#{applicationMoneyInvolved,jdbcType=VARCHAR},
 			</if>
@@ -121,6 +142,12 @@
 		<set >
 			<if test="applicationId != null" >
 				`application_id` = #{applicationId,jdbcType=INT},
+			</if>
+			<if test="applicationUserId != null" >
+				`application_user_id` = #{applicationUserId,jdbcType=INT},
+			</if>
+			<if test="applicationUser != null" >
+				`application_user` = #{applicationUser,jdbcType=VARCHAR},
 			</if>
 			<if test="applicationType != null" >
 				`application_type` = #{applicationType,jdbcType=VARCHAR},
@@ -142,6 +169,9 @@
 			</if>
 			<if test="applicationCopyRecipients != null" >
 				`application_copy_recipients` = #{applicationCopyRecipients,jdbcType=VARCHAR},
+			</if>
+			<if test="applicationCreatetime != null" >
+				`application_createtime` = #{applicationCreatetime,jdbcType=VARCHAR},
 			</if>
 			<if test="applicationMoneyInvolved != null" >
 				`application_money_involved` = #{applicationMoneyInvolved,jdbcType=VARCHAR},
@@ -162,6 +192,12 @@
 			<if test="applicationId != null" >
 				`application_id` = #{applicationId,jdbcType=INT},
 			</if>
+			<if test="applicationUserId != null" >
+				`application_user_id` = #{applicationUserId,jdbcType=INT},
+			</if>
+			<if test="applicationUser != null" >
+				`application_user` = #{applicationUser,jdbcType=VARCHAR},
+			</if>
 			<if test="applicationType != null" >
 				`application_type` = #{applicationType,jdbcType=VARCHAR},
 			</if>
@@ -182,6 +218,9 @@
 			</if>
 			<if test="applicationCopyRecipients != null" >
 				`application_copy_recipients` = #{applicationCopyRecipients,jdbcType=VARCHAR},
+			</if>
+			<if test="applicationCreatetime != null" >
+				`application_createtime` = #{applicationCreatetime,jdbcType=VARCHAR},
 			</if>
 			<if test="applicationMoneyInvolved != null" >
 				`application_money_involved` = #{applicationMoneyInvolved,jdbcType=VARCHAR},

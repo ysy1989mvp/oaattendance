@@ -580,6 +580,280 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 		return this;
 	}
 
+	public EmployeeBasicInformationCriteria andPasswordEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `password`='"+password+"' ";
+			}else{
+				condition123 += "`password`='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria orPasswordEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `password`='"+password+"' ";
+			}else{
+				condition123 += "`password`='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPasswordNotEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `password`!='"+password+"' ";
+			}else{
+				condition123 += "`password`!='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordNotEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `password`!='"+password+"' ";
+			}else{
+				condition123 += "`password`!='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	/**
+	 * 大于
+	 * @param 
+	 * @return
+	 */
+	public EmployeeBasicInformationCriteria andPasswordGreaterThan(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `password`>'"+password+"' ";
+			}else{
+				condition123 += "`password`>'"+password+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordGreaterThan(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `password`>'"+password+"' ";
+			}else{
+				condition123 += "`password`>'"+password+"' ";
+			}
+		}
+		return this;
+	}
+	
+	
+	public EmployeeBasicInformationCriteria andPasswordLessThan(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `password`<'"+password+"' ";
+			}else{
+				condition123 += "`password`<'"+password+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordLessThan(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `password`<'"+password+"' ";
+			}else{
+				condition123 += "`password`<'"+password+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPasswordGreadterThanAndEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `password`>='"+password+"' ";
+			}else{
+				condition123 += "`password`>='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordGreadterThanAndEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `password`>='"+password+"' ";
+			}else{
+				condition123 += "`password`>='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPasswordLessThanAndEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `password`<='"+password+"' ";
+			}else{
+				condition123 += "`password`<='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordLessThanAndEquals(String password){
+		if(password!=null&&password.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `password`<='"+password+"' ";
+			}else{
+				condition123 += "`password`<='"+password+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPasswordLike(String password){
+		if(password!=null&&password.trim().length()>0&&!("%".equals(password.trim()))&&!("%%".equals(password.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `password` like '"+password+"' ";
+			}else{
+				condition123 += "`password` like '"+password+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordLike(String password){
+		if(password!=null&&password.trim().length()>0&&!("%".equals(password.trim()))&&!("%%".equals(password.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `password` like '"+password+"' ";
+			}else{
+				condition123 += "`password` like '"+password+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPasswordIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `password` is null";
+			}else{
+				condition123 += "`password` is null";
+			}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordIsNull(){
+		if(condition123.length()>0){
+			condition123 += "or `password` is null";
+		}else{
+			condition123 += "`password` is null";
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria andPasswordIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "and `password` is not null";
+		}else{
+			condition123 += "`password` is not null";
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPasswordIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "or `password` is not null";
+		}else{
+			condition123 += "`password` is not null";
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPasswordIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `password` in("+value+") ";
+			}else{
+				condition123 += "`password` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria orPasswordIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `password` in("+value+") ";
+			}else{
+				condition123 += "`password` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPasswordNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `password` not in("+value+") ";
+			}else{
+				condition123 += "`password` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria orPasswordNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `password` not in("+value+") ";
+			}else{
+				condition123 += "`password` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+
 	public EmployeeBasicInformationCriteria andNameEquals(String name){
 		if(name!=null&&name.trim().length()>0){
 			if(condition123.length()>0){
@@ -2176,6 +2450,280 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 		return this;
 	}
 
+	public EmployeeBasicInformationCriteria andPositionEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `position`='"+position+"' ";
+			}else{
+				condition123 += "`position`='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria orPositionEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `position`='"+position+"' ";
+			}else{
+				condition123 += "`position`='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPositionNotEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `position`!='"+position+"' ";
+			}else{
+				condition123 += "`position`!='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionNotEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `position`!='"+position+"' ";
+			}else{
+				condition123 += "`position`!='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	/**
+	 * 大于
+	 * @param 
+	 * @return
+	 */
+	public EmployeeBasicInformationCriteria andPositionGreaterThan(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `position`>'"+position+"' ";
+			}else{
+				condition123 += "`position`>'"+position+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionGreaterThan(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `position`>'"+position+"' ";
+			}else{
+				condition123 += "`position`>'"+position+"' ";
+			}
+		}
+		return this;
+	}
+	
+	
+	public EmployeeBasicInformationCriteria andPositionLessThan(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `position`<'"+position+"' ";
+			}else{
+				condition123 += "`position`<'"+position+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionLessThan(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `position`<'"+position+"' ";
+			}else{
+				condition123 += "`position`<'"+position+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPositionGreadterThanAndEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `position`>='"+position+"' ";
+			}else{
+				condition123 += "`position`>='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionGreadterThanAndEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `position`>='"+position+"' ";
+			}else{
+				condition123 += "`position`>='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPositionLessThanAndEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "and `position`<='"+position+"' ";
+			}else{
+				condition123 += "`position`<='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionLessThanAndEquals(String position){
+		if(position!=null&&position.trim().length()>0){
+			if(condition123.length()>0){
+				condition123 += "or `position`<='"+position+"' ";
+			}else{
+				condition123 += "`position`<='"+position+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPositionLike(String position){
+		if(position!=null&&position.trim().length()>0&&!("%".equals(position.trim()))&&!("%%".equals(position.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `position` like '"+position+"' ";
+			}else{
+				condition123 += "`position` like '"+position+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionLike(String position){
+		if(position!=null&&position.trim().length()>0&&!("%".equals(position.trim()))&&!("%%".equals(position.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `position` like '"+position+"' ";
+			}else{
+				condition123 += "`position` like '"+position+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPositionIsNull(){
+			if(condition123.length()>0){
+				condition123 += "and `position` is null";
+			}else{
+				condition123 += "`position` is null";
+			}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionIsNull(){
+		if(condition123.length()>0){
+			condition123 += "or `position` is null";
+		}else{
+			condition123 += "`position` is null";
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria andPositionIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "and `position` is not null";
+		}else{
+			condition123 += "`position` is not null";
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orPositionIsNotNull(){
+		if(condition123.length()>0){
+			condition123 += "or `position` is not null";
+		}else{
+			condition123 += "`position` is not null";
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPositionIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `position` in("+value+") ";
+			}else{
+				condition123 += "`position` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria orPositionIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `position` in("+value+") ";
+			}else{
+				condition123 += "`position` in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andPositionNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "and `position` not in("+value+") ";
+			}else{
+				condition123 += "`position` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria orPositionNotIn(String value){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
+			if(condition123.length()>0){
+				condition123 += "or `position` not in("+value+") ";
+			}else{
+				condition123 += "`position` not in("+value+") ";
+			}
+		}
+		return this;
+	}
+
 	public EmployeeBasicInformationCriteria andPoliticsStatusEquals(String politicsStatus){
 		if(politicsStatus!=null&&politicsStatus.trim().length()>0){
 			if(condition123.length()>0){
@@ -2450,44 +2998,44 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 		return this;
 	}
 
-	public EmployeeBasicInformationCriteria andIdentityCardNumberEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria andIdentityCardNumberEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `identity_card_number`="+identityCardNumber+" ";
+				condition123 += "and `identity_card_number`='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`='"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria orIdentityCardNumberEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria orIdentityCardNumberEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `identity_card_number`="+identityCardNumber+" ";
+				condition123 += "or `identity_card_number`='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`='"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andIdentityCardNumberNotEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria andIdentityCardNumberNotEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `identity_card_number`!="+identityCardNumber+" ";
+				condition123 += "and `identity_card_number`!='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`!="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`!='"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orIdentityCardNumberNotEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria orIdentityCardNumberNotEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `identity_card_number`!="+identityCardNumber+" ";
+				condition123 += "or `identity_card_number`!='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`!="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`!='"+identityCardNumber+"' ";
 			}
 		}
 		return this;
@@ -2497,107 +3045,107 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 	 * @param 
 	 * @return
 	 */
-	public EmployeeBasicInformationCriteria andIdentityCardNumberGreaterThan(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria andIdentityCardNumberGreaterThan(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `identity_card_number`>"+identityCardNumber+" ";
+				condition123 += "and `identity_card_number`>'"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`>"+identityCardNumber+" ";
+				condition123 += "`identity_card_number`>'"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orIdentityCardNumberGreaterThan(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria orIdentityCardNumberGreaterThan(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `identity_card_number`>"+identityCardNumber+" ";
+				condition123 += "or `identity_card_number`>'"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`>"+identityCardNumber+" ";
-			}
-		}
-		return this;
-	}
-	
-	
-	public EmployeeBasicInformationCriteria andIdentityCardNumberLessThan(Integer identityCardNumber){
-		if(identityCardNumber!=null){
-			if(condition123.length()>0){
-				condition123 += "and `identity_card_number`<"+identityCardNumber+" ";
-			}else{
-				condition123 += "`identity_card_number`<"+identityCardNumber+" ";
-			}
-		}
-		return this;
-	}
-	public EmployeeBasicInformationCriteria orIdentityCardNumberLessThan(Integer identityCardNumber){
-		if(identityCardNumber!=null){
-			if(condition123.length()>0){
-				condition123 += "or `identity_card_number`<"+identityCardNumber+" ";
-			}else{
-				condition123 += "`identity_card_number`<"+identityCardNumber+" ";
+				condition123 += "`identity_card_number`>'"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andIdentityCardNumberGreadterThanAndEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	
+	public EmployeeBasicInformationCriteria andIdentityCardNumberLessThan(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `identity_card_number`>="+identityCardNumber+" ";
+				condition123 += "and `identity_card_number`<'"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`>="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`<'"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orIdentityCardNumberGreadterThanAndEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria orIdentityCardNumberLessThan(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `identity_card_number`>="+identityCardNumber+" ";
+				condition123 += "or `identity_card_number`<'"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`>="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`<'"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andIdentityCardNumberLessThanAndEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria andIdentityCardNumberGreadterThanAndEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `identity_card_number`<="+identityCardNumber+" ";
+				condition123 += "and `identity_card_number`>='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`<="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`>='"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orIdentityCardNumberLessThanAndEquals(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria orIdentityCardNumberGreadterThanAndEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `identity_card_number`<="+identityCardNumber+" ";
+				condition123 += "or `identity_card_number`>='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number`<="+identityCardNumber+" ";
+				condition123 += "`identity_card_number`>='"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
 	
-	public EmployeeBasicInformationCriteria andIdentityCardNumberLike(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria andIdentityCardNumberLessThanAndEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "and `identity_card_number` like "+identityCardNumber+" ";
+				condition123 += "and `identity_card_number`<='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number` like "+identityCardNumber+" ";
+				condition123 += "`identity_card_number`<='"+identityCardNumber+"' ";
 			}
 		}
 		return this;
 	}
-	public EmployeeBasicInformationCriteria orIdentityCardNumberLike(Integer identityCardNumber){
-		if(identityCardNumber!=null){
+	public EmployeeBasicInformationCriteria orIdentityCardNumberLessThanAndEquals(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0){
 			if(condition123.length()>0){
-				condition123 += "or `identity_card_number` like "+identityCardNumber+" ";
+				condition123 += "or `identity_card_number`<='"+identityCardNumber+"' ";
 			}else{
-				condition123 += "`identity_card_number` like "+identityCardNumber+" ";
+				condition123 += "`identity_card_number`<='"+identityCardNumber+"' ";
+			}
+		}
+		return this;
+	}
+	
+	public EmployeeBasicInformationCriteria andIdentityCardNumberLike(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0&&!("%".equals(identityCardNumber.trim()))&&!("%%".equals(identityCardNumber.trim()))){
+			if(condition123.length()>0){
+				condition123 += "and `identity_card_number` like '"+identityCardNumber+"' ";
+			}else{
+				condition123 += "`identity_card_number` like '"+identityCardNumber+"' ";
+			}
+		}
+		return this;
+	}
+	public EmployeeBasicInformationCriteria orIdentityCardNumberLike(String identityCardNumber){
+		if(identityCardNumber!=null&&identityCardNumber.trim().length()>0&&!("%".equals(identityCardNumber.trim()))&&!("%%".equals(identityCardNumber.trim()))){
+			if(condition123.length()>0){
+				condition123 += "or `identity_card_number` like '"+identityCardNumber+"' ";
+			}else{
+				condition123 += "`identity_card_number` like '"+identityCardNumber+"' ";
 			}
 		}
 		return this;
@@ -2635,8 +3183,20 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 		}
 		return this;
 	}
+	
 	public EmployeeBasicInformationCriteria andIdentityCardNumberIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "and `identity_card_number` in("+value+") ";
 			}else{
@@ -2645,8 +3205,20 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 		}
 		return this;
 	}
+	
 	public EmployeeBasicInformationCriteria orIdentityCardNumberIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "or `identity_card_number` in("+value+") ";
 			}else{
@@ -2655,8 +3227,20 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 		}
 		return this;
 	}
+	
 	public EmployeeBasicInformationCriteria andIdentityCardNumberNotIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "and `identity_card_number` not in("+value+") ";
 			}else{
@@ -2665,8 +3249,20 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 		}
 		return this;
 	}
+	
 	public EmployeeBasicInformationCriteria orIdentityCardNumberNotIn(String value){
-		if(value!=null && value.trim().length()>0){
+		if(value!=null&&value.trim().length()>0){
+			if(value.contains(",")){
+				String []values = value.split(",");
+				String newValue = "";
+				for(String s:values){
+					newValue += "'"+s+"',";
+				}
+				newValue = newValue.substring(0, newValue.length()-1);
+				value = newValue;
+			}else{
+				value = "'"+value+"'";
+			}
 			if(condition123.length()>0){
 				condition123 += "or `identity_card_number` not in("+value+") ";
 			}else{
@@ -4871,12 +5467,14 @@ public class EmployeeBasicInformationCriteria extends EmployeeBasicInformation{
 	private void initEmployeeBasicInformation(EmployeeBasicInformation employeeBasicInformation) {
 		super.setEmployeeId(employeeBasicInformation.getEmployeeId());
 		super.setWorkId(employeeBasicInformation.getWorkId());
+		super.setPassword(employeeBasicInformation.getPassword());
 		super.setName(employeeBasicInformation.getName());
 		super.setGender(employeeBasicInformation.getGender());
 		super.setAge(employeeBasicInformation.getAge());
 		super.setNationality(employeeBasicInformation.getNationality());
 		super.setTelephone(employeeBasicInformation.getTelephone());
 		super.setDepartmentName(employeeBasicInformation.getDepartmentName());
+		super.setPosition(employeeBasicInformation.getPosition());
 		super.setPoliticsStatus(employeeBasicInformation.getPoliticsStatus());
 		super.setIdentityCardNumber(employeeBasicInformation.getIdentityCardNumber());
 		super.setEmergencContact(employeeBasicInformation.getEmergencContact());

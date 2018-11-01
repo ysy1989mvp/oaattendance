@@ -5,6 +5,7 @@
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.ApprovalFormAO" >
 		<result column="approval_form_id" property="approvalFormId" jdbcType="BIGINT" />
 		<result column="application_id" property="applicationId" jdbcType="BIGINT" />
+		<result column="application_form_id" property="applicationFormId" jdbcType="BIGINT" />
 		<result column="approval_form_approver" property="approvalFormApprover" jdbcType="VARCHAR" />
 		<result column="approval_form_order" property="approvalFormOrder" jdbcType="VARCHAR" />
 		<result column="approval_form_through_or_not" property="approvalFormThroughOrNot" jdbcType="VARCHAR" />
@@ -14,7 +15,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`approval_form_id`,`application_id`,`approval_form_approver`,`approval_form_order`,`approval_form_through_or_not`,`approval_form_lastest_approver_or_not`,`approval_time`,`status`,`create_time`
+		`approval_form_id`,`application_id`,`application_form_id`,`approval_form_approver`,`approval_form_order`,`approval_form_through_or_not`,`approval_form_lastest_approver_or_not`,`approval_time`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -49,6 +50,9 @@
 			<if test="applicationId != null" >
 				`application_id`, 
 			</if>
+			<if test="applicationFormId != null" >
+				`application_form_id`, 
+			</if>
 			<if test="approvalFormApprover != null" >
 				`approval_form_approver`, 
 			</if>
@@ -77,6 +81,9 @@
 			</if>
 			<if test="applicationId != null" >
 				#{applicationId,jdbcType=INT},
+			</if>
+			<if test="applicationFormId != null" >
+				#{applicationFormId,jdbcType=INT},
 			</if>
 			<if test="approvalFormApprover != null" >
 				#{approvalFormApprover,jdbcType=VARCHAR},
@@ -111,6 +118,9 @@
 			<if test="applicationId != null" >
 				`application_id` = #{applicationId,jdbcType=INT},
 			</if>
+			<if test="applicationFormId != null" >
+				`application_form_id` = #{applicationFormId,jdbcType=INT},
+			</if>
 			<if test="approvalFormApprover != null" >
 				`approval_form_approver` = #{approvalFormApprover,jdbcType=VARCHAR},
 			</if>
@@ -144,6 +154,9 @@
 			</if>
 			<if test="applicationId != null" >
 				`application_id` = #{applicationId,jdbcType=INT},
+			</if>
+			<if test="applicationFormId != null" >
+				`application_form_id` = #{applicationFormId,jdbcType=INT},
 			</if>
 			<if test="approvalFormApprover != null" >
 				`approval_form_approver` = #{approvalFormApprover,jdbcType=VARCHAR},

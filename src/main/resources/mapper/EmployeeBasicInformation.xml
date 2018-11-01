@@ -5,14 +5,16 @@
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.EmployeeBasicInformationAO" >
 		<result column="employee_id" property="employeeId" jdbcType="BIGINT" />
 		<result column="work_id" property="workId" jdbcType="BIGINT" />
+		<result column="password" property="password" jdbcType="VARCHAR" />
 		<result column="name" property="name" jdbcType="VARCHAR" />
 		<result column="gender" property="gender" jdbcType="VARCHAR" />
 		<result column="age" property="age" jdbcType="BIGINT" />
 		<result column="nationality" property="nationality" jdbcType="VARCHAR" />
 		<result column="telephone" property="telephone" jdbcType="VARCHAR" />
 		<result column="department_name" property="departmentName" jdbcType="VARCHAR" />
+		<result column="position" property="position" jdbcType="VARCHAR" />
 		<result column="politics_status" property="politicsStatus" jdbcType="VARCHAR" />
-		<result column="identity_card_number" property="identityCardNumber" jdbcType="BIGINT" />
+		<result column="identity_card_number" property="identityCardNumber" jdbcType="VARCHAR" />
 		<result column="emergenc_contact" property="emergencContact" jdbcType="VARCHAR" />
 		<result column="emergenc_contact_telphone" property="emergencContactTelphone" jdbcType="VARCHAR" />
 		<result column="employee_address" property="employeeAddress" jdbcType="VARCHAR" />
@@ -23,7 +25,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`employee_id`,`work_id`,`name`,`gender`,`age`,`nationality`,`telephone`,`department_name`,`politics_status`,`identity_card_number`,`emergenc_contact`,`emergenc_contact_telphone`,`employee_address`,`degree_of_education`,`school_of_graduation`,`major`,`status`,`create_time`
+		`employee_id`,`work_id`,`password`,`name`,`gender`,`age`,`nationality`,`telephone`,`department_name`,`position`,`politics_status`,`identity_card_number`,`emergenc_contact`,`emergenc_contact_telphone`,`employee_address`,`degree_of_education`,`school_of_graduation`,`major`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -58,6 +60,9 @@
 			<if test="workId != null" >
 				`work_id`, 
 			</if>
+			<if test="password != null" >
+				`password`, 
+			</if>
 			<if test="name != null" >
 				`name`, 
 			</if>
@@ -75,6 +80,9 @@
 			</if>
 			<if test="departmentName != null" >
 				`department_name`, 
+			</if>
+			<if test="position != null" >
+				`position`, 
 			</if>
 			<if test="politicsStatus != null" >
 				`politics_status`, 
@@ -114,6 +122,9 @@
 			<if test="workId != null" >
 				#{workId,jdbcType=INT},
 			</if>
+			<if test="password != null" >
+				#{password,jdbcType=VARCHAR},
+			</if>
 			<if test="name != null" >
 				#{name,jdbcType=VARCHAR},
 			</if>
@@ -132,11 +143,14 @@
 			<if test="departmentName != null" >
 				#{departmentName,jdbcType=VARCHAR},
 			</if>
+			<if test="position != null" >
+				#{position,jdbcType=VARCHAR},
+			</if>
 			<if test="politicsStatus != null" >
 				#{politicsStatus,jdbcType=VARCHAR},
 			</if>
 			<if test="identityCardNumber != null" >
-				#{identityCardNumber,jdbcType=INT},
+				#{identityCardNumber,jdbcType=VARCHAR},
 			</if>
 			<if test="emergencContact != null" >
 				#{emergencContact,jdbcType=VARCHAR},
@@ -174,6 +188,9 @@
 			<if test="workId != null" >
 				`work_id` = #{workId,jdbcType=INT},
 			</if>
+			<if test="password != null" >
+				`password` = #{password,jdbcType=VARCHAR},
+			</if>
 			<if test="name != null" >
 				`name` = #{name,jdbcType=VARCHAR},
 			</if>
@@ -192,11 +209,14 @@
 			<if test="departmentName != null" >
 				`department_name` = #{departmentName,jdbcType=VARCHAR},
 			</if>
+			<if test="position != null" >
+				`position` = #{position,jdbcType=VARCHAR},
+			</if>
 			<if test="politicsStatus != null" >
 				`politics_status` = #{politicsStatus,jdbcType=VARCHAR},
 			</if>
 			<if test="identityCardNumber != null" >
-				`identity_card_number` = #{identityCardNumber,jdbcType=INT},
+				`identity_card_number` = #{identityCardNumber,jdbcType=VARCHAR},
 			</if>
 			<if test="emergencContact != null" >
 				`emergenc_contact` = #{emergencContact,jdbcType=VARCHAR},
@@ -235,6 +255,9 @@
 			<if test="workId != null" >
 				`work_id` = #{workId,jdbcType=INT},
 			</if>
+			<if test="password != null" >
+				`password` = #{password,jdbcType=VARCHAR},
+			</if>
 			<if test="name != null" >
 				`name` = #{name,jdbcType=VARCHAR},
 			</if>
@@ -253,11 +276,14 @@
 			<if test="departmentName != null" >
 				`department_name` = #{departmentName,jdbcType=VARCHAR},
 			</if>
+			<if test="position != null" >
+				`position` = #{position,jdbcType=VARCHAR},
+			</if>
 			<if test="politicsStatus != null" >
 				`politics_status` = #{politicsStatus,jdbcType=VARCHAR},
 			</if>
 			<if test="identityCardNumber != null" >
-				`identity_card_number` = #{identityCardNumber,jdbcType=INT},
+				`identity_card_number` = #{identityCardNumber,jdbcType=VARCHAR},
 			</if>
 			<if test="emergencContact != null" >
 				`emergenc_contact` = #{emergencContact,jdbcType=VARCHAR},

@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 
  * @author sunny Yang
- * @date 2018-10-24
+ * @date 2018-11-01
  * @discribe EmployeeBasicInformation实体类，数据类型与字段 和数据库一致，
  * 不允许更改，需要更改的部分在mojo对应的AO类中进行更改
  *
@@ -20,6 +20,8 @@ public class EmployeeBasicInformation implements Serializable{
 	private Integer employeeId;
 	//工号
 	private Integer workId;
+	//密码
+	private String password;
 	//姓名
 	private String name;
 	//性别
@@ -32,10 +34,12 @@ public class EmployeeBasicInformation implements Serializable{
 	private String telephone;
 	//部门名称
 	private String departmentName;
+	//职位
+	private String position;
 	//政治面貌
 	private String politicsStatus;
 	//身份证
-	private Integer identityCardNumber;
+	private String identityCardNumber;
 	//紧急联系人
 	private String emergencContact;
 	// 紧急联系人联系电话
@@ -70,6 +74,14 @@ public class EmployeeBasicInformation implements Serializable{
 
 	public void setWorkId(Integer workId) {
 		this.workId = workId;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getName() {
@@ -120,6 +132,14 @@ public class EmployeeBasicInformation implements Serializable{
 		this.departmentName = departmentName;
 	}
 
+	public String getPosition() {
+		return position;
+	}
+
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
 	public String getPoliticsStatus() {
 		return politicsStatus;
 	}
@@ -128,11 +148,11 @@ public class EmployeeBasicInformation implements Serializable{
 		this.politicsStatus = politicsStatus;
 	}
 
-	public Integer getIdentityCardNumber() {
+	public String getIdentityCardNumber() {
 		return identityCardNumber;
 	}
 
-	public void setIdentityCardNumber(Integer identityCardNumber) {
+	public void setIdentityCardNumber(String identityCardNumber) {
 		this.identityCardNumber = identityCardNumber;
 	}
 
@@ -201,6 +221,6 @@ public class EmployeeBasicInformation implements Serializable{
 	}
 
 public String toString() {
-		return "EmployeeBasicInformation [employeeId=" + employeeId + ", workId=" + workId + ", name=" + name + ", gender=" + gender + ", age=" + age + ", nationality=" + nationality + ", telephone=" + telephone + ", departmentName=" + departmentName + ", politicsStatus=" + politicsStatus + ", identityCardNumber=" + identityCardNumber + ", emergencContact=" + emergencContact + ", emergencContactTelphone=" + emergencContactTelphone + ", employeeAddress=" + employeeAddress + ", degreeOfEducation=" + degreeOfEducation + ", schoolOfGraduation=" + schoolOfGraduation + ", major=" + major + ", status=" + status + ", createTime=" + createTime+"]";
+		return "EmployeeBasicInformation [employeeId=" + employeeId + ", workId=" + workId + ", password=" + password + ", name=" + name + ", gender=" + gender + ", age=" + age + ", nationality=" + nationality + ", telephone=" + telephone + ", departmentName=" + departmentName + ", position=" + position + ", politicsStatus=" + politicsStatus + ", identityCardNumber=" + identityCardNumber + ", emergencContact=" + emergencContact + ", emergencContactTelphone=" + emergencContactTelphone + ", employeeAddress=" + employeeAddress + ", degreeOfEducation=" + degreeOfEducation + ", schoolOfGraduation=" + schoolOfGraduation + ", major=" + major + ", status=" + status + ", createTime=" + createTime+"]";
 	}
 }

@@ -5,10 +5,13 @@
 	<resultMap id="BaseResultMap" type="com.qkz5.oaattendance.entity.mojo.AttendanceSetAO" >
 		<result column="attendance_set_id" property="attendanceSetId" jdbcType="BIGINT" />
 		<result column="attendance_type" property="attendanceType" jdbcType="VARCHAR" />
+		<result column="attendance_classes" property="attendanceClasses" jdbcType="VARCHAR" />
 		<result column="attendance_object" property="attendanceObject" jdbcType="VARCHAR" />
 		<result column="attendance_business_hours" property="attendanceBusinessHours" jdbcType="VARCHAR" />
 		<result column="attendance_closing_time" property="attendanceClosingTime" jdbcType="VARCHAR" />
 		<result column="attendance_flex_time" property="attendanceFlexTime" jdbcType="VARCHAR" />
+		<result column="attendance_lateness_allowed" property="attendanceLatenessAllowed" jdbcType="VARCHAR" />
+		<result column="attendance_advance_time_allowed" property="attendanceAdvanceTimeAllowed" jdbcType="VARCHAR" />
 		<result column="attendance_address" property="attendanceAddress" jdbcType="VARCHAR" />
 		<result column="attendance_address_range" property="attendanceAddressRange" jdbcType="VARCHAR" />
 		<result column="attendance_default_time" property="attendanceDefaultTime" jdbcType="VARCHAR" />
@@ -16,7 +19,7 @@
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
 	<sql id="Base_Column_List" >
-		`attendance_set_id`,`attendance_type`,`attendance_object`,`attendance_business_hours`,`attendance_closing_time`,`attendance_flex_time`,`attendance_address`,`attendance_address_range`,`attendance_default_time`,`status`,`create_time`
+		`attendance_set_id`,`attendance_type`,`attendance_classes`,`attendance_object`,`attendance_business_hours`,`attendance_closing_time`,`attendance_flex_time`,`attendance_lateness_allowed`,`attendance_advance_time_allowed`,`attendance_address`,`attendance_address_range`,`attendance_default_time`,`status`,`create_time`
 	</sql>
 	<!-- 通过id查询实体对象 -->
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -51,6 +54,9 @@
 			<if test="attendanceType != null" >
 				`attendance_type`, 
 			</if>
+			<if test="attendanceClasses != null" >
+				`attendance_classes`, 
+			</if>
 			<if test="attendanceObject != null" >
 				`attendance_object`, 
 			</if>
@@ -62,6 +68,12 @@
 			</if>
 			<if test="attendanceFlexTime != null" >
 				`attendance_flex_time`, 
+			</if>
+			<if test="attendanceLatenessAllowed != null" >
+				`attendance_lateness_allowed`, 
+			</if>
+			<if test="attendanceAdvanceTimeAllowed != null" >
+				`attendance_advance_time_allowed`, 
 			</if>
 			<if test="attendanceAddress != null" >
 				`attendance_address`, 
@@ -86,6 +98,9 @@
 			<if test="attendanceType != null" >
 				#{attendanceType,jdbcType=VARCHAR},
 			</if>
+			<if test="attendanceClasses != null" >
+				#{attendanceClasses,jdbcType=VARCHAR},
+			</if>
 			<if test="attendanceObject != null" >
 				#{attendanceObject,jdbcType=VARCHAR},
 			</if>
@@ -97,6 +112,12 @@
 			</if>
 			<if test="attendanceFlexTime != null" >
 				#{attendanceFlexTime,jdbcType=VARCHAR},
+			</if>
+			<if test="attendanceLatenessAllowed != null" >
+				#{attendanceLatenessAllowed,jdbcType=VARCHAR},
+			</if>
+			<if test="attendanceAdvanceTimeAllowed != null" >
+				#{attendanceAdvanceTimeAllowed,jdbcType=VARCHAR},
 			</if>
 			<if test="attendanceAddress != null" >
 				#{attendanceAddress,jdbcType=VARCHAR},
@@ -125,6 +146,9 @@
 			<if test="attendanceType != null" >
 				`attendance_type` = #{attendanceType,jdbcType=VARCHAR},
 			</if>
+			<if test="attendanceClasses != null" >
+				`attendance_classes` = #{attendanceClasses,jdbcType=VARCHAR},
+			</if>
 			<if test="attendanceObject != null" >
 				`attendance_object` = #{attendanceObject,jdbcType=VARCHAR},
 			</if>
@@ -136,6 +160,12 @@
 			</if>
 			<if test="attendanceFlexTime != null" >
 				`attendance_flex_time` = #{attendanceFlexTime,jdbcType=VARCHAR},
+			</if>
+			<if test="attendanceLatenessAllowed != null" >
+				`attendance_lateness_allowed` = #{attendanceLatenessAllowed,jdbcType=VARCHAR},
+			</if>
+			<if test="attendanceAdvanceTimeAllowed != null" >
+				`attendance_advance_time_allowed` = #{attendanceAdvanceTimeAllowed,jdbcType=VARCHAR},
 			</if>
 			<if test="attendanceAddress != null" >
 				`attendance_address` = #{attendanceAddress,jdbcType=VARCHAR},
@@ -165,6 +195,9 @@
 			<if test="attendanceType != null" >
 				`attendance_type` = #{attendanceType,jdbcType=VARCHAR},
 			</if>
+			<if test="attendanceClasses != null" >
+				`attendance_classes` = #{attendanceClasses,jdbcType=VARCHAR},
+			</if>
 			<if test="attendanceObject != null" >
 				`attendance_object` = #{attendanceObject,jdbcType=VARCHAR},
 			</if>
@@ -176,6 +209,12 @@
 			</if>
 			<if test="attendanceFlexTime != null" >
 				`attendance_flex_time` = #{attendanceFlexTime,jdbcType=VARCHAR},
+			</if>
+			<if test="attendanceLatenessAllowed != null" >
+				`attendance_lateness_allowed` = #{attendanceLatenessAllowed,jdbcType=VARCHAR},
+			</if>
+			<if test="attendanceAdvanceTimeAllowed != null" >
+				`attendance_advance_time_allowed` = #{attendanceAdvanceTimeAllowed,jdbcType=VARCHAR},
 			</if>
 			<if test="attendanceAddress != null" >
 				`attendance_address` = #{attendanceAddress,jdbcType=VARCHAR},

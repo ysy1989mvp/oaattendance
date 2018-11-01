@@ -8,8 +8,8 @@
 		<result column="message_table_recipient" property="messageTableRecipient" jdbcType="VARCHAR" />
 		<result column="message_table_content" property="messageTableContent" jdbcType="VARCHAR" />
 		<result column="message_table_status" property="messageTableStatus" jdbcType="VARCHAR" />
-		<result column="message_table_send_yes_or_no" property="messageTableSendYesOrNo" jdbcType="BIGINT" />
-		<result column="message_table_app_send_yes_or_no" property="messageTableAppSendYesOrNo" jdbcType="BIGINT" />
+		<result column="message_table_send_yes_or_no" property="messageTableSendYesOrNo" jdbcType="VARCHAR" />
+		<result column="message_table_app_send_yes_or_no" property="messageTableAppSendYesOrNo" jdbcType="VARCHAR" />
 		<result column="status" property="status" jdbcType="VARCHAR" />
 		<result column="create_time" property="createTime" jdbcType="VARCHAR" />
 	</resultMap>
@@ -88,10 +88,10 @@
 				#{messageTableStatus,jdbcType=VARCHAR},
 			</if>
 			<if test="messageTableSendYesOrNo != null" >
-				#{messageTableSendYesOrNo,jdbcType=INT},
+				#{messageTableSendYesOrNo,jdbcType=VARCHAR},
 			</if>
 			<if test="messageTableAppSendYesOrNo != null" >
-				#{messageTableAppSendYesOrNo,jdbcType=INT},
+				#{messageTableAppSendYesOrNo,jdbcType=VARCHAR},
 			</if>
 			<if test="status != null" >
 				#{status,jdbcType=VARCHAR},
@@ -121,10 +121,10 @@
 				`message_table_status` = #{messageTableStatus,jdbcType=VARCHAR},
 			</if>
 			<if test="messageTableSendYesOrNo != null" >
-				`message_table_send_yes_or_no` = #{messageTableSendYesOrNo,jdbcType=INT},
+				`message_table_send_yes_or_no` = #{messageTableSendYesOrNo,jdbcType=VARCHAR},
 			</if>
 			<if test="messageTableAppSendYesOrNo != null" >
-				`message_table_app_send_yes_or_no` = #{messageTableAppSendYesOrNo,jdbcType=INT},
+				`message_table_app_send_yes_or_no` = #{messageTableAppSendYesOrNo,jdbcType=VARCHAR},
 			</if>
 			<if test="status != null" >
 				`status` = #{status,jdbcType=VARCHAR},
@@ -155,10 +155,10 @@
 				`message_table_status` = #{messageTableStatus,jdbcType=VARCHAR},
 			</if>
 			<if test="messageTableSendYesOrNo != null" >
-				`message_table_send_yes_or_no` = #{messageTableSendYesOrNo,jdbcType=INT},
+				`message_table_send_yes_or_no` = #{messageTableSendYesOrNo,jdbcType=VARCHAR},
 			</if>
 			<if test="messageTableAppSendYesOrNo != null" >
-				`message_table_app_send_yes_or_no` = #{messageTableAppSendYesOrNo,jdbcType=INT},
+				`message_table_app_send_yes_or_no` = #{messageTableAppSendYesOrNo,jdbcType=VARCHAR},
 			</if>
 			<if test="status != null" >
 				`status` = #{status,jdbcType=VARCHAR},
