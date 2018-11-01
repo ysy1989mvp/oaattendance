@@ -41,7 +41,7 @@ public class LonginController {
             // 所有认证时异常的父类.
             catch (AuthenticationException ae) {
                 //unexpected condition?  error?
-                System.out.println("登录失败: " + ae.getMessage());
+                System.out.println("登录失败: fv " + ae.getMessage());
             }
         }
 
