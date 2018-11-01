@@ -3,7 +3,7 @@ test:
     msg: yyysssyyy
 # Server
 server:
-    port: 8089
+    port: 9999
     tomcat:
         uri-encoding: UTF-8
         

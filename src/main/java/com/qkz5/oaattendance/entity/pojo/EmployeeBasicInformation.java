@@ -1,5 +1,8 @@
 package com.qkz5.oaattendance.entity.pojo;
 			
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.util.Date;
 /**
@@ -11,6 +14,7 @@ import java.util.Date;
  *
  *
  */
+@Component
 public class EmployeeBasicInformation implements Serializable{
 	/**
 	 * 控制版本号
