@@ -61,7 +61,7 @@ public class ShiroRealm extends AuthorizingRealm {
             EmployeeBasicInformationAO employeeBasicInformationAO = employeeBasicInformationAOList.get(0);
             // 若存在，将此用户存放到登录认证info中，无需自己做密码对比，Shiro会为我们进行密码对比校验
             return new SimpleAuthenticationInfo(employeeBasicInformationAO, employeeBasicInformationAO.getPassword(), getName());
-        }else {
+        } else {
             //4. 若用户不存在, 则可以抛出 UnknownAccountException 异常
             throw new UnknownAccountException("用户不存在!");
         }

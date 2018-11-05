@@ -24,15 +24,17 @@ import javax.servlet.http.HttpSession;
 @RequestMapping(value = "/login")
 public class LonginController {
     private static Logger LOG = LoggerFactory.getLogger(LonginController.class);
-    @RequestMapping("/login")
-    public String login(@RequestParam("username") String username,
-                        @RequestParam("password") String password  , HttpServletRequest request, HttpServletResponse response){
+    @RequestMapping(value="/login")
+    public String login(String username,
+                        String password  , HttpServletRequest request, HttpServletResponse response){
         //1.获取当前对象
         Subject currentUser = SecurityUtils.getSubject();
-
+        System.out.println("111111111111111111111111");
+        System.out.println(username);
+        System.out.println(password);
         if (!currentUser.isAuthenticated()) {
             // 把用户名和密码封装为 UsernamePasswordToken 对象
-            password = MD5Util.MD5Encode(password);
+            //password = MD5Util.MD5Encode(password);
             UsernamePasswordToken token = new UsernamePasswordToken(username, password);
             // rememberme
             token.setRememberMe(true);
@@ -40,6 +42,8 @@ public class LonginController {
                 System.out.println("1. " + token.hashCode());
                 // 执行登录.
                 currentUser.login(token);
+                return "login";
+
             }
             // ... catch more exceptions here (maybe custom ones specific to your application?
             // 所有认证时异常的父类.
@@ -49,13 +53,10 @@ public class LonginController {
             }
         }
 
-
-
-
-       return "login";
+       return "132";
     }
 
-
+//
 //    @RequestMapping(value="/loginCheck",method = RequestMethod.POST)
 //		 @ApiOperation(value = "用户登录验证请求",httpMethod ="POST", response = String.class,notes = "loginCheck")
 //		 @ResponseBody

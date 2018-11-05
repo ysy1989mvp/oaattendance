@@ -82,6 +82,7 @@ public class ShiroConfiguration {
         shiroFilterFactoryBean.setLoginUrl("/login");
         shiroFilterFactoryBean.setSuccessUrl("/");
         shiroFilterFactoryBean.setUnauthorizedUrl("/403");
+
         
         return shiroFilterFactoryBean;
     }
