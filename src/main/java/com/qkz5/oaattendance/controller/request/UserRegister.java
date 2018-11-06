@@ -31,7 +31,7 @@ public class UserRegister {
   @Resource
     EmployeeBasicInformation employeeBasicInformation;
 
-    @ApiOperation(value = "注册",notes = "注册")
+     @ApiOperation(value = "注册",notes = "注册")
     @RequestMapping("/register")
     @ResponseBody
     public String register(){
