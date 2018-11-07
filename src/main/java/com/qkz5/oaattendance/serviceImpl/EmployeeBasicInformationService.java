@@ -73,7 +73,7 @@ public class EmployeeBasicInformationService implements IEmployeeBasicInformatio
 	public ServiceResult<Integer> addEmployeeBasicInformation(EmployeeBasicInformation employeeBasicInformation) {
 		ServiceResult<Integer> serviceResult = new ServiceResult<Integer>();
 		Integer result = employeeBasicInformationDAO.addEmployeeBasicInformation(employeeBasicInformation);
-		if(result!=null){
+		if(result==1){
 			serviceResult.setCode(200);
 			serviceResult.setMsg("添加对象正常");
 			serviceResult.setSucceed(true);

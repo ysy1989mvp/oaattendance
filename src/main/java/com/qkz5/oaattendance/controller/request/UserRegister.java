@@ -6,7 +6,8 @@ import com.qkz5.oaattendance.serviceImpl.EmployeeBasicInformationService;
 import com.slkj.autocode.entity.ServiceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.omg.CORBA.Object;
+import org.apache.shiro.crypto.hash.SimpleHash;
+import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +15,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.List;
-
-
 /**
  * Author: caidingnu
  * Date:   2018/11/1
@@ -31,21 +30,42 @@ public class UserRegister {
   @Resource
     EmployeeBasicInformation employeeBasicInformation;
 
-     @ApiOperation(value = "注册",notes = "注册")
+    @ApiOperation(value = "注册",notes = "注册")
     @RequestMapping("/register")
     @ResponseBody
-    public String register(){
-      employeeBasicInformation.setWorkId(2222);
-      employeeBasicInformation.setName("李白");
+    public int register(EmployeeBasicInformation employeeBasicInformation){
+
+//        System.out.println(password);
+//      String password="123456";
+//      employeeBasicInformation.setWorkId(5);
+//      employeeBasicInformation.setName("李白222");
+      String hashAlgorithmName="Md5";
+      Object credentials=employeeBasicInformation.getPassword();
+      Object salt= ByteSource.Util.bytes(credentials);
+      int hashIterations=1023;
+       Object pass2=new SimpleHash(hashAlgorithmName, credentials, salt, hashIterations);
+       String pass=String.valueOf(pass2);
+       employeeBasicInformation.setPassword(pass);
+//       String pass3=String.valueOf(pass2);
+//           employeeBasicInformation.setPassword(pass3);
+//        employeeBasicInformation.setWorkId(workId);
+//        employeeBasicInformation.setPassword(password);
         ServiceResult<Integer> result= iEmployeeBasicInformationService.addEmployeeBasicInformation(employeeBasicInformation);
         System.out.println(result.getMsg());
+
+
+
 //        ServiceResult o = iEmployeeBasicInformationService.selectById(1);
 //       System.out.println(o.getData());
 
 //       查询所有
 //        List  x=iEmployeeBasicInformationService.chaxun();
-        return "1";
+        return result.getCode();
     }
 
+    @RequestMapping("/openlogin")
+    public String openlogin(){
+        return "login";
+    }
 
 }

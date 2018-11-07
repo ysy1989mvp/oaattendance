@@ -19,18 +19,18 @@
 			<div class="login-center clearfix">
 				<div class="login-center-img"><img src="../img/name.png"/></div>
 				<div class="login-center-input">
-					<input type="text" name="" value="" placeholder="请输入您的用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的用户名'" />
+					<input type="text" name="" id="username" value="" placeholder="请输入您的用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的用户名'" />
 					<div class="login-center-input-text">用户名</div>
 				</div>
 			</div>
 			<div class="login-center clearfix">
 				<div class="login-center-img"><img src="../img/password.png"/></div>
 				<div class="login-center-input">
-					<input type="password"  />
+					<input id="password" type="password"  />
 					<div class="login-center-input-text">密码</div>
 				</div>
 			</div>
-			<div class="login-button">
+			<div class="login-button" id="zhuce">
 				登录
 			</div>
 		</div>
@@ -40,7 +40,10 @@
 <!-- scripts -->
 <script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/resister.js"></script>
 <script type="text/javascript">
+
 	function hasClass(elem, cls) {
 	  cls = cls || '';
 	  if (cls.replace(/\s/g, '').length == 0) return false; //当cls没有参数时，返回false

@@ -49,6 +49,7 @@ public class ShiroRealm extends AuthorizingRealm {
 
         //2. 从 UsernamePasswordToken 中来获取 username
         String telephoneNum = upToken.getUsername();
+         System.out.println( upToken.getPassword()+"==========4444==========");
 
         //3. 调用数据库的方法, 从数据库中查询 username 对应的用户记录
         System.out.println("从数据库中获取 username: " + telephoneNum + " 所对应的用户信息.");
